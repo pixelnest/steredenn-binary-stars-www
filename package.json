@@ -1,0 +1,41 @@
+{
+  "name": "steredenn-binary-stars-www",
+  "version": "0.0.0",
+  "description": "Website for Steredenn Binary Stars",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "solarsailer/steredenn-binary-stars-www",
+  "author": {
+    "name": "Pixelnest Studio",
+    "url": "http://pixelnest.io/"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.4.0",
+    "lodash": "^4.17.4",
+    "next": "latest",
+    "parallax-js": "^3.1.0",
+    "polished": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.4.0"
+  },
+  "devDependencies": {},
+  "babel": {
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+        "styled-components",
+        {
+          "ssr": true,
+          "displayName": true,
+          "preprocess": false
+        }
+      ]
+    ]
+  }
+}
