@@ -1,12 +1,16 @@
 import {css} from 'styled-components'
 
+// -------------------------------------------------------------
+// Styles.
+// -------------------------------------------------------------
+
 export const globalStyles = css`
   html {
     /* Border-box by default #1. */
     box-sizing: border-box;
 
     /* Background #1. */
-    background: tomato; /* Overscroll. */
+    background: black; /* Overscroll. */
 
     /* Font #1. */
     color: black;
@@ -20,7 +24,8 @@ export const globalStyles = css`
     margin: 0;
 
     /* Background #2. */
-    background: white;
+    color: white;
+    background: black;
 
     /* Font #2. */
     font-size: 1.5em;
