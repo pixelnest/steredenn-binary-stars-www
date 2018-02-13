@@ -1,5 +1,7 @@
 import {css} from 'styled-components'
 
+import {Colors} from './values'
+
 // -------------------------------------------------------------
 // Styles.
 // -------------------------------------------------------------
@@ -9,10 +11,10 @@ export const globalStyles = css`
     /* Border-box by default #1. */
     box-sizing: border-box;
 
-    /* Background #1. */
-    background: black; /* Overscroll. */
+    /* Overscroll. */
+    background: ${Colors.Background};
 
-    /* Font #1. */
+    /* Tweak default font properties. */
     color: black;
     font: 62.5%/1.4 Verdana, sans-serif;
   }
@@ -23,11 +25,10 @@ export const globalStyles = css`
     min-height: 100vh;
     margin: 0;
 
-    /* Background #2. */
     color: white;
-    background: black;
+    background: url('/static/images/Stars.png') ${Colors.Background};
 
-    /* Font #2. */
+    /* Actual default font size. */
     font-size: 1.5em;
   }
 
@@ -47,6 +48,6 @@ export const globalStyles = css`
   /* Selection. */
   ::selection {
     color: white;
-    background: tomato;
+    background: ${Colors.Brand};
   }
 `
