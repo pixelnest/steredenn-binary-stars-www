@@ -10,7 +10,7 @@ import AwardsContainer from '../components/AwardsContainer'
 
 export default () => {
   return (
-    <div class="page">
+    <div className="page">
       <ParallaxHeader />
       <AwardsContainer />
     </div>
