@@ -16,7 +16,7 @@ export const globalStyles = css`
 
     /* Tweak default font properties. */
     color: black;
-    font: 62.5%/1.4 Verdana, sans-serif;
+    font: 50%/1.4 Verdana, sans-serif;
   }
 
   body {
@@ -29,7 +29,7 @@ export const globalStyles = css`
     background: url('/static/images/Stars.png') ${Colors.Background};
 
     /* Actual default font size. */
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   html,
