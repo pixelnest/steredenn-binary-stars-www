@@ -52,7 +52,7 @@ export function BigAward({image, site, url, mainAward}) {
   `
 
   const Image = styled.img`
-    ${props => (mainAward ? 'width: 100%' : 'width: 80%')};
+    ${mainAward ? 'width: 100%' : 'width: 80%'};
   `
 
   return (
