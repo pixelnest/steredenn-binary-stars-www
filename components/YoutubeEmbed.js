@@ -8,6 +8,20 @@ export default function YoutubeEmbed({code}) {
       border: 1px solid black;
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     }
+
+    @media (max-width: 800px) {
+      iframe {
+        width: 540px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        width: 80%;
+        height: 240px;
+      }
+    }
   `
 
   return (
