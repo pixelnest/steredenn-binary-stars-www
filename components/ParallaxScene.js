@@ -21,6 +21,9 @@ const Scene = styled.div`
   }
 
   .layer-big-halo {
+    top: 0;
+    height: 600px;
+    background: url('/static/images/Halo-Sun-Big.png') repeat-x top;
   }
 
   .layer-big-sun {
@@ -31,27 +34,35 @@ const Scene = styled.div`
   }
 
   .layer-small-halo {
+    top: 130px !important;
+    left: 155px !important;
+    width: 279px;
+    height: 279px;
+    background: url('/static/images/Halo-Sun-Small.png') no-repeat center;
   }
 
   .layer-small-sun {
-    top: 0;
+    top: 150px !important;
+    left: 200px !important;
     width: 212px;
     height: 238px;
     background: url('/static/images/Sun-Small-2x.png') no-repeat center;
-    background-size: 212px 238px;
   }
 
   .layer-logo-shadow,
   .layer-logo-image {
-    width: 100%;
     height: 500px;
   }
 
   .layer-logo-shadow {
+    left: 0;
+    right: 0;
     background: url('/static/images/Logo-Shadow.png') no-repeat center;
   }
 
   .layer-logo-image {
+    left: 0;
+    right: 0;
   }
 `
 
@@ -68,8 +79,8 @@ const Logo = styled.img`
 export default class ParallaxScene extends Component {
   componentDidMount() {
     this.parallax = new Parallax(this.scene, {
-      frictionX: 0.05,
-      frictionY: 0.025,
+      frictionX: 0.025,
+      frictionY: 0.01,
       invertX: false
     })
   }
@@ -81,9 +92,7 @@ export default class ParallaxScene extends Component {
   render() {
     return (
       <Scene innerRef={el => (this.scene = el)}>
-        <div className="layer-big-halo" data-depth="0.05">
-          Halo
-        </div>
+        <div className="layer-big-halo">Halo</div>
         <div className="layer-big-sun" data-depth="0.05">
           Sun
         </div>
