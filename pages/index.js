@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Page from '../components/structure/Page'
 
+import Teaser from '../components/Teaser'
 import AwardsContainer from '../components/AwardsContainer'
 import YoutubeEmbed from '../components/YoutubeEmbed'
 
@@ -13,8 +14,8 @@ import YoutubeEmbed from '../components/YoutubeEmbed'
 export default () => {
   return (
     <Page>
+      <Teaser />
       <AwardsContainer />
-      <YoutubeEmbed code="pziwBxhTpAs" />
     </Page>
   )
 }
