@@ -8,13 +8,11 @@ import {Colors} from '../styles/values'
 function Link({text, url}) {
   const LinkStyled = styled.a`
     color: ${Colors.Brand};
+
+    text-decoration: none;
   `
 
-  return (
-    <p>
-      <LinkStyled href={url}>{text}</LinkStyled>
-    </p>
-  )
+  return <LinkStyled href={url}>{text}</LinkStyled>
 }
 
 // Parent component, which holds the link.
@@ -22,13 +20,21 @@ function Award(props) {
   const Item = styled.div`
     width: ${props.large ? '250px' : '150px'};
     padding: 1rem;
+
+    text-transform: uppercase;
     text-align: center;
+  `
+
+  const LinkContainer = styled.p`
+    font-size: ${props.large ? '1em' : '0.75em'};
   `
 
   return (
     <Item>
       {props.children}
-      <Link text={props.site} url={props.url} />
+      <LinkContainer>
+        <Link text={props.site} url={props.url} />
+      </LinkContainer>
     </Item>
   )
 }
@@ -40,6 +46,8 @@ export function BigAward({image, site, url, mainAward}) {
     justify-content: center;
     align-items: center;
     height: 100px;
+
+    margin-bottom: 0.5em;
   `
 
   const Image = styled.img`
@@ -57,9 +65,14 @@ export function BigAward({image, site, url, mainAward}) {
 
 // Small award with the rating instead of an image.
 export function SmallAward({rating, site, url}) {
+  const RatingText = styled.p`
+    margin-bottom: 0.5rem;
+    font-size: 1.25em;
+  `
+
   return (
     <Award site={site} url={url}>
-      <p>{rating}</p>
+      <RatingText>{rating}</RatingText>
     </Award>
   )
 }
