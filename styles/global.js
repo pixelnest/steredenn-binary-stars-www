@@ -80,8 +80,16 @@ export const globalStyles = css`
     text-transform: uppercase;
   }
 
-  p {
+  p,
+  ul,
+  ol,
+  dl {
     margin: 0;
     margin-bottom: 2rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
   }
 `
