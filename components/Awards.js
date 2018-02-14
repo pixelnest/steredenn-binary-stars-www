@@ -5,36 +5,37 @@ import {Colors} from '../styles/values'
 // Components.
 // -------------------------------------------------------------
 
-function Link({text, url}) {
-  const LinkStyled = styled.a`
-    color: ${Colors.Brand};
-
-    text-decoration: none;
-  `
-
-  return <LinkStyled href={url}>{text}</LinkStyled>
-}
-
 // Parent component, which holds the link.
-function Award(props) {
-  const Item = styled.div`
-    width: ${props.large ? '250px' : '150px'};
+function Award({site, url, large, children}) {
+  const Item = styled.a`
+    width: ${large ? '250px' : '150px'};
     padding: 1rem;
 
+    color: white;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+
+    transition: transform 0.2s ease-out;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
   `
 
-  const LinkContainer = styled.p`
-    font-size: ${props.large ? '1em' : '0.75em'};
+  const Text = styled.p`
+    color: ${Colors.Brand};
+    font-size: ${large ? '1em' : '0.75em'};
   `
 
   return (
-    <Item>
-      {props.children}
-      <LinkContainer>
-        <Link text={props.site} url={props.url} />
-      </LinkContainer>
+    <Item href={url}>
+      {children}
+      <Text>{site}</Text>
     </Item>
   )
 }
