@@ -5,16 +5,22 @@ import ParallaxHeader from '../components/ParallaxHeader'
 import AwardsContainer from '../components/AwardsContainer'
 import YoutubeEmbed from '../components/YoutubeEmbed'
 
+import Footer from '../components/Footer'
+
 // -------------------------------------------------------------
 // Main page.
 // -------------------------------------------------------------
 
 export default () => {
   return (
-    <div className="page">
-      <ParallaxHeader />
-      <AwardsContainer />
-      <YoutubeEmbed code="pziwBxhTpAs" />
-    </div>
+    <Fragment>
+      <div className="page">
+        <ParallaxHeader />
+        <AwardsContainer />
+        <YoutubeEmbed code="pziwBxhTpAs" />
+      </div>
+
+      <Footer />
+    </Fragment>
   )
 }
