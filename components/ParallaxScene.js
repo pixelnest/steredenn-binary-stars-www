@@ -119,13 +119,13 @@ export default class ParallaxScene extends Component {
       <Scene innerRef={el => (this.scene = el)}>
         <BackgroundLayer data-depth="0.00" />
 
-        <BigSunLayer data-depth="0.05" />
+        <BigSunLayer data-depth="0.005" />
 
-        <SmallSunShadowLayer data-depth="0.25" />
-        <SmallSunLayer data-depth="0.25" />
+        <SmallSunShadowLayer data-depth="0.15" />
+        <SmallSunLayer data-depth="0.15" />
         <SmallSunLightLayer data-depth="0.1" />
 
-        <JunkLayer data-depth="0.075" />
+        <JunkLayer data-depth="0.015" />
 
         <LogoShadowLayer data-depth="0.5" />
         <LogoLayer data-depth="0.01">
