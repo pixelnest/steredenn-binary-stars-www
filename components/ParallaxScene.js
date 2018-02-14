@@ -10,25 +10,6 @@ import {Aligner} from './Toolbox'
 
 const Layer = styled.div`
   position: absolute;
-  text-indent: -9999px;
-`
-
-const BackgroundLayer = Layer.extend`
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 600px;
-
-  background: url('/static/images/parallax/background.png') repeat-x top;
-`
-
-const BigSunLayer = Layer.extend`
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 600px;
-
-  background: url('/static/images/parallax/big.png') no-repeat center;
 `
 
 const SmallSunShadowLayer = Layer.extend`
@@ -93,8 +74,7 @@ const LogoLayer = Layer.extend`
 // -------------------------------------------------------------
 
 const Scene = styled.div`
-  height: 450px;
-  width: 100%;
+  height: 500px;
   overflow-x: hidden;
 `
 
@@ -119,26 +99,22 @@ export default class ParallaxScene extends Component {
 
   render() {
     return (
-      <Fragment>
-        <BackgroundLayer />
-        <BigSunLayer />
-        <Scene innerRef={el => (this.scene = el)}>
-          <SmallSunShadowLayer data-depth="0.15" />
-          <SmallSunLayer data-depth="0.125" />
-          <SmallSunLightLayer data-depth="0.35" />
-          <JunkLayer data-depth="0.015" />
-          <LogoShadowLayer data-depth="0.3" />
-          <LogoLayer data-depth="0.01">
-            <Aligner>
-              <Logo
-                src="/static/images/Logo.png"
-                title="Steredenn: Binary Stars"
-                alt="Steredenn: Binary Stars"
-              />
-            </Aligner>
-          </LogoLayer>
-        </Scene>
-      </Fragment>
+      <Scene innerRef={el => (this.scene = el)}>
+        <SmallSunShadowLayer data-depth="0.15" />
+        <SmallSunLayer data-depth="0.125" />
+        <SmallSunLightLayer data-depth="0.35" />
+        <JunkLayer data-depth="0.015" />
+        <LogoShadowLayer data-depth="0.3" />
+        <LogoLayer data-depth="0.01">
+          <Aligner>
+            <Logo
+              src="/static/images/Logo.png"
+              title="Steredenn: Binary Stars"
+              alt="Steredenn: Binary Stars"
+            />
+          </Aligner>
+        </LogoLayer>
+      </Scene>
     )
   }
 }
