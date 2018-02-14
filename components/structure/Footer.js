@@ -9,14 +9,15 @@ import Link from '../Link'
 
 export default function Footer() {
   const Wrapper = styled.footer`
-    padding-top: 20rem;
+    padding: 20rem 0 2rem;
 
     color: ${Colors.Highlights};
 
     text-align: center;
     text-transform: uppercase;
 
-    ul {
+    ul,
+    p {
       margin: 0;
     }
 
