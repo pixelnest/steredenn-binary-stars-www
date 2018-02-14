@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import ParallaxScene from './ParallaxScene'
+import ParallaxScene from '../ParallaxScene'
 
 // -------------------------------------------------------------
 // Components.

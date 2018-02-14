@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import {Colors} from '../styles/values'
-import Link from './Link'
+import {Colors} from '../../styles/values'
+import Link from '../Link'
 
 // -------------------------------------------------------------
 // Components.
