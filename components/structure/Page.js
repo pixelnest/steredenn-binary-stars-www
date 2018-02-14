@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
 
-import Menu from './Menu'
+import {SocialMenu, StoreMenu} from './Menu'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -25,15 +25,21 @@ const Decorator = props => (
   </BackgroundGradient>
 )
 
-const LeftNav = styled.div`
-  margin-bottom: 4rem;
-  min-width: 200px;
+const Column = props => {
+  const Container = styled.section`
+    margin-bottom: 4rem;
+    min-width: 200px;
 
-  @media (min-width: 1000px) {
-    position: fixed;
-    margin-button: 0;
-  }
-`
+    @media (min-width: 1000px) {
+      position: fixed;
+      ${props.attachRight ? 'right: 0' : ''};
+
+      margin-bottom: 0;
+    }
+  `
+
+  return <Container>{props.children}</Container>
+}
 
 // -------------------------------------------------------------
 // Export.
@@ -43,9 +49,14 @@ export default ({children}) => {
   return (
     <Decorator>
       <Header />
-      <LeftNav>
-        <Menu />
-      </LeftNav>
+
+      <Column>
+        <SocialMenu />
+      </Column>
+      <Column attachRight>
+        <StoreMenu />
+      </Column>
+
       <main role="main">{children}</main>
       <Footer />
     </Decorator>
