@@ -28,7 +28,7 @@ export const globalStyles = css`
     box-sizing: border-box;
 
     /* Overscroll. */
-    background: ${Colors.Background};
+    background: ${Colors.Blacks};
 
     /* Tweak default font properties. */
     color: black;
@@ -42,7 +42,7 @@ export const globalStyles = css`
     margin: 0;
 
     color: white;
-    background: url('/static/images/Stars.png') ${Colors.Background};
+    background: url('/static/images/Stars.png') ${Colors.Blacks};
 
     /* Actual default font size. */
     font-size: 2em;

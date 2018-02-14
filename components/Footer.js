@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import {Colors} from '../styles/values'
 import Link from './Link'
 
 // -------------------------------------------------------------
@@ -9,6 +10,8 @@ import Link from './Link'
 export default function Footer() {
   const Wrapper = styled.footer`
     padding-top: 20rem;
+
+    color: ${Colors.Highlights};
 
     text-align: center;
     text-transform: uppercase;
