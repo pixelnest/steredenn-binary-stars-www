@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import {Fragment, Component} from 'react'
 import Parallax from 'parallax-js'
 import styled from 'styled-components'
 
@@ -15,16 +15,17 @@ const Layer = styled.div`
 
 const BackgroundLayer = Layer.extend`
   top: 0;
-
+  left: 0;
+  right: 0;
   height: 600px;
 
   background: url('/static/images/parallax/background.png') repeat-x top;
 `
 
 const BigSunLayer = Layer.extend`
-  top: -1rem !important;
-
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 600px;
 
   background: url('/static/images/parallax/big.png') no-repeat center;
@@ -62,8 +63,10 @@ const SmallSunLightLayer = Layer.extend`
 
 const JunkLayer = Layer.extend`
   top: 150px !important;
-  right: 150px;
+  left: auto !important;
+  right: 150px !important;
 
+  width: 456px;
   height: 160px;
 
   background: url('/static/images/parallax/junk.png') no-repeat right;
@@ -76,8 +79,6 @@ const LogoShadowLayer = Layer.extend`
   height: 500px;
 
   background: url('/static/images/parallax/logo-shadow.png') no-repeat center;
-
-  opacity: 0.75;
 `
 
 const LogoLayer = Layer.extend`
@@ -93,6 +94,8 @@ const LogoLayer = Layer.extend`
 
 const Scene = styled.div`
   height: 450px;
+  width: 100%;
+  overflow-x: hidden;
 `
 
 const Logo = styled.img`
@@ -116,28 +119,26 @@ export default class ParallaxScene extends Component {
 
   render() {
     return (
-      <Scene innerRef={el => (this.scene = el)}>
-        <BackgroundLayer data-depth="0.00" />
-
-        <BigSunLayer data-depth="0.005" />
-
-        <SmallSunShadowLayer data-depth="0.15" />
-        <SmallSunLayer data-depth="0.15" />
-        <SmallSunLightLayer data-depth="0.1" />
-
-        <JunkLayer data-depth="0.015" />
-
-        <LogoShadowLayer data-depth="0.5" />
-        <LogoLayer data-depth="0.01">
-          <Aligner>
-            <Logo
-              src="/static/images/Logo.png"
-              title="Steredenn: Binary Stars"
-              alt="Steredenn: Binary Stars"
-            />
-          </Aligner>
-        </LogoLayer>
-      </Scene>
+      <Fragment>
+        <BackgroundLayer />
+        <BigSunLayer />
+        <Scene innerRef={el => (this.scene = el)}>
+          <SmallSunShadowLayer data-depth="0.125" />
+          <SmallSunLayer data-depth="0.125" />
+          <SmallSunLightLayer data-depth="0.1" />
+          <JunkLayer data-depth="0.015" />
+          <LogoShadowLayer data-depth="0.35" />
+          <LogoLayer data-depth="0.01">
+            <Aligner>
+              <Logo
+                src="/static/images/Logo.png"
+                title="Steredenn: Binary Stars"
+                alt="Steredenn: Binary Stars"
+              />
+            </Aligner>
+          </LogoLayer>
+        </Scene>
+      </Fragment>
     )
   }
 }
