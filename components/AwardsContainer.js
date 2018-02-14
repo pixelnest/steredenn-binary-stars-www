@@ -24,18 +24,18 @@ export default function AwardsContainer() {
     <Container>
       <Line>
         <BigAward
-          image="/static/images/Award-TA.png"
+          image="/static/images/awards/award-ta.png"
           site="TouchArcade"
           url="http://toucharcade.com/2017/05/12/toucharcade-game-of-the-week-steredenn/"
         />
         <BigAward
-          image="/static/images/Award-JV.png"
+          image="/static/images/awards/award-jv.png"
           site="jeuxvideo.com"
           url="http://www.jeuxvideo.com/test/445407/stederenn-un-shooter-rogue-like-explosif.htm"
           mainAward
         />
         <BigAward
-          image="/static/images/Award-PG.png"
+          image="/static/images/awards/award-pg.png"
           site="Pocket Gamer"
           url="http://www.pocketgamer.co.uk/r/iPad/Steredenn/review.asp?c=73946&srch=steredenn"
         />

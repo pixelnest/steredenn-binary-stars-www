@@ -23,14 +23,14 @@ const Scene = styled.div`
   .layer-big-halo {
     top: 0;
     height: 600px;
-    background: url('/static/images/Halo-Sun-Big.png') repeat-x top;
+    background: url('/static/images/parallax/background.png') repeat-x top;
   }
 
   .layer-big-sun {
     top: -1rem !important;
     width: 100%;
     height: 600px;
-    background: url('/static/images/Sun-Big-2x.png') no-repeat center;
+    background: url('/static/images/parallax/big.png') no-repeat center;
   }
 
   .layer-small-halo {
@@ -38,7 +38,7 @@ const Scene = styled.div`
     left: 155px !important;
     width: 279px;
     height: 279px;
-    background: url('/static/images/Halo-Sun-Small.png') no-repeat center;
+    background: url('/static/images/parallax/small-shadow.png') no-repeat center;
   }
 
   .layer-small-sun {
@@ -46,7 +46,7 @@ const Scene = styled.div`
     left: 200px !important;
     width: 212px;
     height: 238px;
-    background: url('/static/images/Sun-Small-2x.png') no-repeat center;
+    background: url('/static/images/parallax/small.png') no-repeat center;
   }
 
   .layer-logo-shadow,
@@ -57,7 +57,7 @@ const Scene = styled.div`
   .layer-logo-shadow {
     left: 0;
     right: 0;
-    background: url('/static/images/Logo-Shadow.png') no-repeat center;
+    background: url('/static/images/parallax/logo-shadow.png') no-repeat center;
   }
 
   .layer-logo-image {
