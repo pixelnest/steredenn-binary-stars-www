@@ -7,6 +7,22 @@ import {Colors} from './values'
 // -------------------------------------------------------------
 
 export const globalStyles = css`
+  @font-face {
+    font-family: 'Nevis';
+    src: url('/static/fonts/nevis.woff2') format('woff2'),
+      url('/static/fonts/nevis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: '04B03';
+    src: url('/static/fonts/04b03.woff2') format('woff2'),
+      url('/static/fonts/04b03.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html {
     /* Border-box by default #1. */
     box-sizing: border-box;
