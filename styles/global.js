@@ -32,7 +32,7 @@ export const globalStyles = css`
 
     /* Tweak default font properties. */
     color: black;
-    font: 50%/1.4 Verdana, sans-serif;
+    font: 50%/1.4 '04B03', Verdana, sans-serif;
   }
 
   body {
@@ -65,5 +65,23 @@ export const globalStyles = css`
   ::selection {
     color: white;
     background: ${Colors.Brand};
+  }
+
+  /* Default styles. */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Nevis, Impact, Verdana, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 2rem;
   }
 `
