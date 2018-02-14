@@ -5,6 +5,10 @@ import {BigAward, SmallAward} from './Awards'
 // Styled.
 // -------------------------------------------------------------
 
+const Container = styled.div`
+  margin-bottom: 6rem;
+`
+
 const Line = styled.div`
   display: flex;
   justify-content: center;
@@ -17,7 +21,7 @@ const Line = styled.div`
 
 export default function AwardsContainer() {
   return (
-    <div>
+    <Container>
       <Line>
         <BigAward
           image="/static/images/Award-TA.png"
@@ -90,6 +94,6 @@ export default function AwardsContainer() {
           url="http://www.epic-reviews.ml/steredenn-review/"
         />
       </Line>
-    </div>
+    </Container>
   )
 }
