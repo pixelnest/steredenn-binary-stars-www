@@ -13,6 +13,10 @@ const Line = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `
 
 // -------------------------------------------------------------

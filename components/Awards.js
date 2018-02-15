@@ -18,10 +18,6 @@ function Award({site, url, large, children}) {
 
     transition: transform 0.2s ease-out;
 
-    &:visited {
-      color: white;
-    }
-
     &:hover {
       transform: scale(1.15);
     }
@@ -52,7 +48,12 @@ export function BigAward({image, site, url, mainAward}) {
   `
 
   const Image = styled.img`
-    ${mainAward ? 'width: 100%' : 'width: 80%'};
+    width: 80%;
+
+    /* If the page is big, we distinguish the mainAward from the rest. */
+    @media (min-width: 600px) {
+      ${mainAward ? 'width: 100%' : 'width: 80%'};
+    }
   `
 
   return (
