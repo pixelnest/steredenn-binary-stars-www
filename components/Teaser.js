@@ -38,6 +38,13 @@ export default () => {
         massively expanded, this is Steredenn: Binary Stars.
       </p>
       <p>
+        You can read an exhaustive FAQ about the new features and the thought
+        process behind Steredenn: Binary Stars in{' '}
+        <Link url="http://pixelnest.io/2018/02/steredenn-binary-stars-announcement/">
+          our announcement post.
+        </Link>
+      </p>
+      <p>
         Find more information about Steredenn: Classic{' '}
         <Link url="http://steredenn.pixelnest.io/classic/">here</Link>.
       </p>
