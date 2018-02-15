@@ -1,4 +1,4 @@
-# Steredenn Binary Stars
+# Steredenn: Binary Stars
 
 ## Getting Started
 

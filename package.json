@@ -1,7 +1,7 @@
 {
   "name": "steredenn-binary-stars-www",
   "version": "0.0.0",
-  "description": "Website for Steredenn Binary Stars",
+  "description": "Website for Steredenn: Binary Stars",
   "license": "UNLICENSED",
   "private": true,
   "repository": "solarsailer/steredenn-binary-stars-www",
@@ -26,9 +26,7 @@
   },
   "devDependencies": {},
   "babel": {
-    "presets": [
-      "next/babel"
-    ],
+    "presets": ["next/babel"],
     "plugins": [
       [
         "styled-components",

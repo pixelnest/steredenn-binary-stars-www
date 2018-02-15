@@ -19,7 +19,7 @@ export default class SteredennDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Steredenn Binary Stars</title>
+          <title>Steredenn: Binary Stars</title>
           {this.props.styleTags}
         </Head>
         <body>
