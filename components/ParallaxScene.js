@@ -74,7 +74,7 @@ const LogoLayer = Layer.extend`
 // -------------------------------------------------------------
 
 const Scene = styled.div`
-  height: 500px;
+  height: 520px;
   overflow-x: hidden;
 `
 
