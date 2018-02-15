@@ -39,7 +39,7 @@ export default () => {
       </p>
       <p>
         Find more information about Steredenn: Classic{' '}
-        <Link url="http://steredenn.pixelnest.io/">here</Link>.
+        <Link url="http://steredenn.pixelnest.io/classic/">here</Link>.
       </p>
     </Wrapper>
   )
