@@ -3,6 +3,12 @@ import {ServerStyleSheet, injectGlobal} from 'styled-components'
 
 import {globalStyles} from '../styles/global'
 
+import Meta from '../components/structure/Meta'
+
+// -------------------------------------------------------------
+// Document.
+// -------------------------------------------------------------
+
 export default class SteredennDocument extends Document {
   static getInitialProps({renderPage}) {
     injectGlobal`${globalStyles}`
@@ -19,7 +25,7 @@ export default class SteredennDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Steredenn: Binary Stars</title>
+          <Meta />
           {this.props.styleTags}
         </Head>
         <body>
