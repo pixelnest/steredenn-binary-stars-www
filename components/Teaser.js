@@ -39,7 +39,7 @@ export default () => {
         massively expanded, this is Steredenn: Binary Stars.
       </p>
       <p>
-        Find more information about the original Steredenn{' '}
+        Find more information about Steredenn: Classic{' '}
         <Link url="http://steredenn.pixelnest.io/">here</Link>.
       </p>
     </Wrapper>
