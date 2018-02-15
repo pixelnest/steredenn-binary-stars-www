@@ -4,6 +4,7 @@ import {ServerStyleSheet, injectGlobal} from 'styled-components'
 import {globalStyles} from '../styles/global'
 
 import Meta from '../components/structure/Meta'
+import GA from '../components/structure/GA'
 
 // -------------------------------------------------------------
 // Document.
@@ -31,6 +32,7 @@ export default class SteredennDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <GA />
         </body>
       </html>
     )
