@@ -1,7 +1,7 @@
 import styled, {css} from 'styled-components'
 import {rgba} from 'polished'
 
-import {Breakpoints} from '../../styles/values'
+import {Colors, Breakpoints} from '../../styles/values'
 
 import Link from '../Link'
 
@@ -40,6 +40,12 @@ const MenuItem = styled.li`
   font-size: 1.125em;
   text-transform: uppercase;
   line-height: normal;
+
+  span {
+    display: block;
+    color: ${Colors.Whites};
+    font-size: 0.75em;
+  }
 
   a {
     display: block;
@@ -139,24 +145,28 @@ export const StoreMenu = ({}) => {
       <MenuTitle>Stores</MenuTitle>
       <ul>
         <MenuItem color="#C60518" direction="right">
-          <Link url="#">Nintendo Switch</Link>
+          <Link url="#">
+            Nintendo Switch<span>March 8th - Binary Stars</span>
+          </Link>
         </MenuItem>
         <MenuItem color="#F1BD28" direction="right">
-          <Link url="http://store.steampowered.com/app/347160">Steam</Link>
+          <Link url="http://store.steampowered.com/app/347160">
+            Steam<span>Classic</span>
+          </Link>
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
           <Link url="https://store.playstation.com/#!/steredenn/cid=EP1302-CUSA04998_00-STEREDENN0000PXN">
-            PS4
+            PS4<span>Classic</span>
           </Link>
         </MenuItem>
         <MenuItem color="#98C73D" direction="right">
           <Link url="http://store.xbox.com/en-US/Xbox-One/Games/Steredenn/d31b7d58-a407-4c4a-84ec-3dab1911a0c7">
-            Xbox One
+            Xbox One<span>Classic</span>
           </Link>
         </MenuItem>
         <MenuItem color="#B06FCB" direction="right">
           <Link url="https://itunes.apple.com/app/steredenn/id916957220">
-            iPhone/iPad
+            iPhone/iPad<span>Classic</span>
           </Link>
         </MenuItem>
       </ul>
