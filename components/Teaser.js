@@ -11,7 +11,6 @@ const Wrapper = styled.section`
   max-width: calc(640px + 6rem);
 
   margin: 0 auto;
-  margin-bottom: 4rem;
   padding: 3rem;
 
   text-align: center;
