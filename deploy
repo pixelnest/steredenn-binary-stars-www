@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+DESTINATION=$1
+
+if [ -z "$DESTINATION" ]; then
+  echo "Error: no user@server argument. Abort..."
+  exit 0
+fi
+
+yarn run export
+scp -r out $DESTINATION:/var/www/
+
+ssh $DESTINATION 'cd /var/www/ && \
+                  mv steredenn.pixelnest.io/classic/ classic/ && \
+                  mv steredenn.pixelnest.io/public/ public/ && \
+                  rm -rf steredenn.pixelnest.io && \
+                  mv out steredenn.pixelnest.io && \
+                  mv classic/ steredenn.pixelnest.io/ && \
+                  mv public/ steredenn.pixelnest.io/ && \
+                  service nginx restart'
+
