@@ -12,7 +12,8 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next"
+    "dev": "next",
+    "export": "next build && next export"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.0",
