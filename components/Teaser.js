@@ -29,8 +29,8 @@ export default () => {
   return (
     <Wrapper>
       <h1>
-        Steredenn: Binary Stars is coming on the{' '}
-        <strong>Nintendo Switch</strong> on <strong>March 8th, 2018</strong>
+        Steredenn: Binary Stars is coming to <strong>Nintendo Switch</strong> on{' '}
+        <strong>March 8th, 2018</strong>
       </h1>
       <YoutubeEmbed code="pziwBxhTpAs" />
       <p>
