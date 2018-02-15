@@ -1,19 +1,38 @@
 import styled, {css} from 'styled-components'
 import {rgba} from 'polished'
 
+import {Breakpoints} from '../../styles/values'
+
 import Link from '../Link'
 
 // -------------------------------------------------------------
 // Components.
 // -------------------------------------------------------------
 
-const Menu = styled.ul`
+const Menu = styled.section`
   text-align: ${props => (props.align ? props.align : 'left')};
+
+  @media (max-width: ${Breakpoints.Menu}) {
+    padding: 0 2rem;
+    text-align: center;
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    li + li {
+      margin-left: 1rem;
+    }
+  }
 `
 
 const MenuTitle = styled.h2`
   margin-bottom: 1rem;
   padding: 0 2rem;
+
+  @media (max-width: ${Breakpoints.Menu}) {
+    display: none;
+  }
 `
 
 const MenuItem = styled.li`
@@ -40,6 +59,19 @@ const MenuItem = styled.li`
         0.5
       )};
   }
+
+  @media (max-width: ${Breakpoints.Menu}) {
+    display: inline-block;
+
+    a {
+      background: ${props => createColor(props.color)};
+    }
+
+    a:hover {
+      padding: 1.3rem 2rem 1rem; /* Overwrite the change of the larger design */
+      background: ${props => createColor(props.color, 0.5)};
+    }
+  }
 `
 
 // -------------------------------------------------------------
@@ -56,6 +88,10 @@ function getHoverPadding(direction) {
       padding-left: 3rem;
     `
   }
+}
+
+function createColor(color = 'black', force = 0.25) {
+  return rgba(color, force)
 }
 
 function createColoredGradient(

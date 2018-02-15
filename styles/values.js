@@ -10,3 +10,7 @@ export const Colors = {
   Highlights: '#B7B6B6',
   Whites: '#E2E2E2'
 }
+
+export const Breakpoints = {
+  Menu: '1100px'
+}

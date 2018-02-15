@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
 
+import {Breakpoints} from '../../styles/values'
+
 import {SocialMenu, StoreMenu} from './Menu'
 
 import Header from './Header'
@@ -27,10 +29,9 @@ const Decorator = props => (
 
 const Column = props => {
   const Container = styled.section`
-    margin-bottom: 4rem;
     min-width: 200px;
 
-    @media (min-width: 1000px) {
+    @media (min-width: ${Breakpoints.Menu}) {
       position: fixed;
       ${props.attachRight ? 'right: 0' : ''};
 
