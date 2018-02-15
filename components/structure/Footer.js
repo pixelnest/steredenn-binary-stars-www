@@ -9,7 +9,7 @@ import Link from '../Link'
 
 export default function Footer() {
   const Wrapper = styled.footer`
-    padding: 20rem 0 2rem;
+    padding: 20rem 2rem 2rem;
 
     color: ${Colors.Highlights};
 
