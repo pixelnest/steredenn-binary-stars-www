@@ -18,6 +18,13 @@ const BackgroundSun = styled.div`
   background: url('/static/images/parallax/big.png') no-repeat top;
 `
 
+const MainContainer = styled.main`
+  max-width: calc(640px + 6rem);
+
+  margin: 0 auto;
+  padding: 3rem;
+`
+
 const Decorator = props => (
   <BackgroundGradient>
     <BackgroundSun>{props.children}</BackgroundSun>
@@ -33,7 +40,7 @@ export default ({children}) => {
     <Decorator>
       <Header />
       <Navigation />
-      <main role="main">{children}</main>
+      <MainContainer role="main">{children}</MainContainer>
       <Footer />
     </Decorator>
   )

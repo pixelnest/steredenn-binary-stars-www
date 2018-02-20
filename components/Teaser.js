@@ -8,11 +8,6 @@ import YoutubeEmbed from './YoutubeEmbed'
 // -------------------------------------------------------------
 
 const Wrapper = styled.section`
-  max-width: calc(640px + 6rem);
-
-  margin: 0 auto;
-  padding: 3rem;
-
   text-align: center;
   text-transform: uppercase;
 
