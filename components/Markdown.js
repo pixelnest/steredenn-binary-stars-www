@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import ReactMarkdown from 'react-markdown'
 import {rgba, tint} from 'polished'
 
-import {linkStyles} from './Link'
+import linkStyles from '../styles/links'
 import {Colors} from '../styles/values'
 
 // -------------------------------------------------------------

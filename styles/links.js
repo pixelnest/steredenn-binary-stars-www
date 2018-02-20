@@ -2,10 +2,10 @@ import styled, {css} from 'styled-components'
 import {Colors} from '../styles/values'
 
 // -------------------------------------------------------------
-// Components.
+// Styles.
 // -------------------------------------------------------------
 
-export const linkStyles = css`
+export default css`
   color: ${Colors.Brand};
   transition: color 0.1s ease-in;
 
@@ -20,11 +20,3 @@ export const linkStyles = css`
     color: ${Colors.BrandDark};
   }
 `
-
-export default ({url, children}) => {
-  const Item = styled.a`
-    ${linkStyles};
-  `
-
-  return <Item href={url}>{children}</Item>
-}

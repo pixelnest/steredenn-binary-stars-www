@@ -1,6 +1,7 @@
 import {css} from 'styled-components'
 
 import {Colors} from './values'
+import linkStyles from './links'
 
 // -------------------------------------------------------------
 // Styles.
@@ -98,4 +99,6 @@ export const globalStyles = css`
     padding: 0;
     list-style: none;
   }
+
+  a {${linkStyles}}
 `

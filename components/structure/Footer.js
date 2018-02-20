@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import {Colors} from '../../styles/values'
-import Link from '../Link'
 
 // -------------------------------------------------------------
 // Components.
@@ -39,18 +38,18 @@ export default function Footer() {
     <Wrapper>
       <HList>
         <li>
-          <Link url="http://pixelnest.io/">Website</Link>
+          <a href="http://pixelnest.io/">Website</a>
         </li>
         <li>
-          <Link url="https://twitter.com/pixelnest/">Twitter</Link>
+          <a href="https://twitter.com/pixelnest/">Twitter</a>
         </li>
         <li>
-          <Link url="https://facebook.com/pixelneststudio/">Facebook</Link>
+          <a href="https://facebook.com/pixelneststudio/">Facebook</a>
         </li>
       </HList>
       <p>
-        (c) 2018 <Link url="http://pixelnest.io">Pixelnest Studio</Link> - we
-        craft games and apps
+        (c) 2018 <a href="http://pixelnest.io">Pixelnest Studio</a> - we craft
+        games and apps
       </p>
     </Wrapper>
   )

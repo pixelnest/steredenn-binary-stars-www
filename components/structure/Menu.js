@@ -3,8 +3,6 @@ import {rgba} from 'polished'
 
 import {Colors, Breakpoints} from '../../styles/values'
 
-import Link from '../Link'
-
 // -------------------------------------------------------------
 // Components.
 // -------------------------------------------------------------
@@ -121,18 +119,18 @@ export const SocialMenu = ({}) => {
       <MenuTitle>Social</MenuTitle>
       <ul>
         <MenuItem>
-          <Link url="mailto:steredenn@pixelnest.io">Contact</Link>
+          <a href="mailto:steredenn@pixelnest.io">Contact</a>
         </MenuItem>
         <MenuItem>
-          <Link url="https://twitter.com/pixelnest/">Twitter</Link>
+          <a href="https://twitter.com/pixelnest/">Twitter</a>
         </MenuItem>
         <MenuItem>
-          <Link url="https://facebook.com/pixelneststudio/">Facebook</Link>
+          <a href="https://facebook.com/pixelneststudio/">Facebook</a>
         </MenuItem>
         <MenuItem>
-          <Link url="http://pixelnest.io/presskit/steredenn-binary-stars/">
+          <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
             Presskit
-          </Link>
+          </a>
         </MenuItem>
       </ul>
     </Menu>
@@ -145,29 +143,29 @@ export const StoreMenu = ({}) => {
       <MenuTitle>Stores</MenuTitle>
       <ul>
         <MenuItem color="#C60518" direction="right">
-          <Link url="#">
+          <a href="#">
             Nintendo Switch<span>March 8th - Binary Stars</span>
-          </Link>
+          </a>
         </MenuItem>
         <MenuItem color="#F1BD28" direction="right">
-          <Link url="http://store.steampowered.com/app/347160">
+          <a href="http://store.steampowered.com/app/347160">
             Steam<span>Classic</span>
-          </Link>
+          </a>
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
-          <Link url="https://store.playstation.com/#!/steredenn/cid=EP1302-CUSA04998_00-STEREDENN0000PXN">
+          <a href="https://store.playstation.com/#!/steredenn/cid=EP1302-CUSA04998_00-STEREDENN0000PXN">
             PS4<span>Classic</span>
-          </Link>
+          </a>
         </MenuItem>
         <MenuItem color="#98C73D" direction="right">
-          <Link url="http://store.xbox.com/en-US/Xbox-One/Games/Steredenn/d31b7d58-a407-4c4a-84ec-3dab1911a0c7">
+          <a href="http://store.xbox.com/en-US/Xbox-One/Games/Steredenn/d31b7d58-a407-4c4a-84ec-3dab1911a0c7">
             Xbox One<span>Classic</span>
-          </Link>
+          </a>
         </MenuItem>
         <MenuItem color="#B06FCB" direction="right">
-          <Link url="https://itunes.apple.com/app/steredenn/id916957220">
+          <a href="https://itunes.apple.com/app/steredenn/id916957220">
             iPhone/iPad<span>Classic</span>
-          </Link>
+          </a>
         </MenuItem>
       </ul>
     </Menu>
