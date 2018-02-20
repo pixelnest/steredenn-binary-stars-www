@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 
-import Link from './Link'
 import YoutubeEmbed from './YoutubeEmbed'
 
 // -------------------------------------------------------------
@@ -33,15 +33,12 @@ export default () => {
         massively expanded, this is Steredenn: Binary Stars.
       </p>
       <p>
-        You can read an exhaustive FAQ about the new features and the thought
-        process behind Steredenn: Binary Stars in{' '}
-        <Link url="http://pixelnest.io/2018/02/steredenn-binary-stars-announcement/">
-          our announcement post.
-        </Link>
+        Read the <Link href="/faq">exhaustive FAQ</Link> about the new features
+        and the thought process behind Steredenn: Binary Stars.
       </p>
       <p>
         Find more information about Steredenn: Classic{' '}
-        <Link url="http://steredenn.pixelnest.io/classic/">here</Link>.
+        <a href="http://steredenn.pixelnest.io/classic/">here</a>.
       </p>
     </Wrapper>
   )
