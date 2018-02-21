@@ -10,7 +10,7 @@ import {Colors, Breakpoints} from '../../styles/values'
 const Menu = styled.section`
   text-align: ${props => (props.align ? props.align : 'left')};
 
-  @media (max-width: ${Breakpoints.Menu}) {
+  @media (max-width: ${Breakpoints.ShowVerticalNavigation}) {
     padding: 0 2rem;
     text-align: center;
 
@@ -28,7 +28,7 @@ const MenuTitle = styled.h2`
   margin-bottom: 1rem;
   padding: 0 2rem;
 
-  @media (max-width: ${Breakpoints.Menu}) {
+  @media (max-width: ${Breakpoints.ShowVerticalNavigation}) {
     display: none;
   }
 `
@@ -64,7 +64,7 @@ const MenuItem = styled.li`
       )};
   }
 
-  @media (max-width: ${Breakpoints.Menu}) {
+  @media (max-width: ${Breakpoints.ShowVerticalNavigation}) {
     display: inline-block;
 
     a {

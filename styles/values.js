@@ -12,5 +12,5 @@ export const Colors = {
 }
 
 export const Breakpoints = {
-  Menu: '1100px'
+  ShowVerticalNavigation: '1100px'
 }

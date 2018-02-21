@@ -30,7 +30,7 @@ const Column = props => {
   const Container = styled.div`
     min-width: 200px;
 
-    @media (min-width: ${Breakpoints.Menu}) {
+    @media (min-width: ${Breakpoints.ShowVerticalNavigation}) {
       /* Absolute at first, then fixed if the user scrolls past a certain threshold. */
       ${props.fixed ? fixed : absolute};
 
@@ -45,7 +45,7 @@ const Column = props => {
       Indeed, with a fixed positioning, if the element is bigger than the viewport,
       some parts may be hidden.
     */
-    @media (min-width: ${Breakpoints.Menu}) and (max-height: 400px) {
+    @media (min-width: ${Breakpoints.ShowVerticalNavigation}) and (max-height: 400px) {
       ${absolute};
     }
   `
