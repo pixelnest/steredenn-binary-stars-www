@@ -34,14 +34,18 @@ const Catchphrase = styled.nav`
 // Export.
 // -------------------------------------------------------------
 
-export default () => {
+export default ({hideBanner}) => {
+  const showBanner = !hideBanner
+
   return (
     <ParallaxHeader>
       <ParallaxScene />
-      <Catchphrase>
-        Steredenn: Binary Stars, the ultimate version of Steredenn, massively
-        expanded, hugely improved
-      </Catchphrase>
+      {showBanner && (
+        <Catchphrase>
+          Steredenn: Binary Stars, the ultimate version of Steredenn, massively
+          expanded, hugely improved
+        </Catchphrase>
+      )}
     </ParallaxHeader>
   )
 }
