@@ -74,7 +74,10 @@ const LogoLayer = Layer.extend`
 // -------------------------------------------------------------
 
 const Scene = styled.div`
+  max-width: 1500px;
   height: 520px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-x: hidden;
 `
 
