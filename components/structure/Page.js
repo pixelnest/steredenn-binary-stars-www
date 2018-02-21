@@ -35,6 +35,16 @@ const Decorator = props => (
 // Export.
 // -------------------------------------------------------------
 
+export const SimplePage = ({children}) => {
+  return (
+    <Decorator>
+      <Header hideBanner />
+      <MainContainer role="main">{children}</MainContainer>
+      <Footer />
+    </Decorator>
+  )
+}
+
 export default ({children}) => {
   return (
     <Decorator>
