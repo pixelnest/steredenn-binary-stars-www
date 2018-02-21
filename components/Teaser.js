@@ -37,8 +37,12 @@ export default () => {
         massively expanded, this is Steredenn: Binary Stars.
       </p>
       <p>
-        Read the <Link href="/faq">exhaustive FAQ</Link> about the new features
-        and the thought process behind Steredenn: Binary Stars.
+        Read the{' '}
+        <Link href="/faq">
+          <a>exhaustive FAQ</a>
+        </Link>{' '}
+        about the new features and the thought process behind Steredenn: Binary
+        Stars.
       </p>
       <p>
         Find more information about Steredenn: Classic{' '}
