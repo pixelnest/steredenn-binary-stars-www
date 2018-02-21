@@ -1,13 +1,13 @@
 import {css} from 'styled-components'
 
-import {Colors} from './values'
-import linkStyles from './links'
+import {Colors} from '../values'
+import linkStyles from '../links'
 
 // -------------------------------------------------------------
-// Styles.
+// Export.
 // -------------------------------------------------------------
 
-export const globalStyles = css`
+export default css`
   @font-face {
     font-family: 'Nevis';
     src: url('/static/fonts/nevis.woff2') format('woff2'),
