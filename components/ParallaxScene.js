@@ -1,6 +1,7 @@
 import {Fragment, Component} from 'react'
 import Parallax from 'parallax-js'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import {Aligner} from './Toolbox'
 
@@ -79,9 +80,11 @@ const Scene = styled.div`
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
+  pointer-events: auto !important;
 `
 
 const Logo = styled.img`
+  display: block;
   margin: auto;
   width: 350px;
   height: 350px;
@@ -110,11 +113,15 @@ export default class ParallaxScene extends Component {
         <LogoShadowLayer data-depth="0.3" />
         <LogoLayer data-depth="0.01">
           <Aligner>
-            <Logo
-              src="/static/images/Logo.png"
-              title="Steredenn: Binary Stars"
-              alt="Steredenn: Binary Stars"
-            />
+            <Link href="/">
+              <a>
+                <Logo
+                  src="/static/images/Logo.png"
+                  title="Steredenn: Binary Stars"
+                  alt="Steredenn: Binary Stars"
+                />
+              </a>
+            </Link>
           </Aligner>
         </LogoLayer>
       </Scene>
