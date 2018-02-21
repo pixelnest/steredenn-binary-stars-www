@@ -11,6 +11,10 @@ const Wrapper = styled.section`
   text-align: center;
   text-transform: uppercase;
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   strong {
     color: #ff5757;
   }
