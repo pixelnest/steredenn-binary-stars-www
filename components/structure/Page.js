@@ -26,9 +26,12 @@ const MainContainer = styled.main`
 `
 
 const Decorator = props => (
-  <BackgroundGradient>
-    <BackgroundSun>{props.children}</BackgroundSun>
-  </BackgroundGradient>
+  <Fragment>
+    <BackgroundGradient>
+      <BackgroundSun>{props.children}</BackgroundSun>
+    </BackgroundGradient>
+    <div id="overlays" />
+  </Fragment>
 )
 
 // -------------------------------------------------------------
