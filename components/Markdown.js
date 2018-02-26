@@ -91,6 +91,15 @@ const Article = styled.article`
   p + h6 {
     margin-top: 3rem;
   }
+
+  ul {
+    list-style-type: square;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 2rem;
+  }
 `
 
 // -------------------------------------------------------------
