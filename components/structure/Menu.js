@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components'
 import {rgba} from 'polished'
+import Link from 'next/link'
 
 import {Colors, Breakpoints} from '../../styles/values'
 
@@ -116,16 +117,21 @@ function createColoredGradient(
 export const SocialMenu = ({}) => {
   return (
     <Menu>
-      <MenuTitle>Social</MenuTitle>
+      <MenuTitle>About</MenuTitle>
       <ul>
         <MenuItem>
-          <a href="mailto:steredenn@pixelnest.io">Contact</a>
+          <Link href="/faq">
+            <a>What's new?</a>
+          </Link>
         </MenuItem>
         <MenuItem>
           <a href="https://twitter.com/pixelnest/">Twitter</a>
         </MenuItem>
         <MenuItem>
           <a href="https://facebook.com/pixelneststudio/">Facebook</a>
+        </MenuItem>
+        <MenuItem>
+          <a href="mailto:steredenn@pixelnest.io">Contact</a>
         </MenuItem>
         <MenuItem>
           <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
