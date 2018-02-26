@@ -10,9 +10,9 @@
     "url": "http://pixelnest.io/"
   },
   "scripts": {
-    "start": "next start",
+    "start": "next",
     "build": "next build",
-    "dev": "next",
+    "prod": "next build && next start",
     "export": "next build && next export"
   },
   "dependencies": {
@@ -28,9 +28,7 @@
   },
   "devDependencies": {},
   "babel": {
-    "presets": [
-      "next/babel"
-    ],
+    "presets": ["next/babel"],
     "plugins": [
       [
         "styled-components",
