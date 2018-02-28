@@ -7,6 +7,10 @@ import Teaser from '../components/Teaser'
 import AwardsContainer from '../components/AwardsContainer'
 import YoutubeEmbed from '../components/YoutubeEmbed'
 
+import Gallery from '../components/Gallery'
+
+import screenshots from '../content/screenshots'
+
 // -------------------------------------------------------------
 // Main page.
 // -------------------------------------------------------------
@@ -16,6 +20,7 @@ export default () => {
     <Page>
       <Teaser />
       <AwardsContainer />
+      <Gallery source={screenshots} />
     </Page>
   )
 }
