@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Breakpoints} from '../styles/values'
 
 // -------------------------------------------------------------
 // Components.
@@ -11,10 +12,19 @@ const GalleryContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 
+  /* Hack to get a gap. */
   max-width: calc((180px * 3) + 2rem + 2rem);
 
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: ${Breakpoints.OneColumnScreenshots}) {
+    justify-content: center;
+
+    a {
+      margin: 0 2rem;
+    }
+  }
 `
 
 const Thumbnail = styled.a`
