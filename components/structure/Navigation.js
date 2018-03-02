@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components'
 
 import {Breakpoints} from '../../styles/values'
 
-import withScrollThreshold from '../ScrollThreshold'
+import withScrollThreshold from '../../hoc/ScrollThreshold'
 import {SocialMenu, StoreMenu} from './Menu'
 
 // -------------------------------------------------------------
