@@ -48,12 +48,13 @@ const Thumbnail = styled.a`
   }
 `
 
-const Screenshot = ({filename}) => {
-  const folder = '/static/images/screenshots'
-  const image = `${folder}/${filename}.png`
-  const thumbnail = `${folder}/thumbs-50/${filename}.jpg`
+const Element = ({filename, source}) => {
+  const {folder, thumbnailFolder, extension, thumbnailExtension} = source
 
-  const titleLabel = `Screenshot #${filename}`
+  const image = `${folder}/${filename}.${extension}`
+  const thumbnail = `${thumbnailFolder}/${filename}.${thumbnailExtension}`
+
+  const titleLabel = `Image #${filename}`
 
   return (
     <Thumbnail href={image}>
@@ -67,9 +68,11 @@ const Screenshot = ({filename}) => {
 // -------------------------------------------------------------
 
 export default ({source}) => {
+  const {data} = source
+
   return (
     <GalleryContainer>
-      {source.map(x => <Screenshot key={x} filename={x} />)}
+      {data.map(x => <Element key={x} filename={x} source={source} />)}
     </GalleryContainer>
   )
 }
