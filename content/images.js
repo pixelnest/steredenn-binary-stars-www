@@ -1,4 +1,4 @@
-export default [
+export const screenshots = [
   '01',
   '03',
   '20',
@@ -21,3 +21,5 @@ export default [
   '29',
   '02'
 ]
+
+export const gifs = []
