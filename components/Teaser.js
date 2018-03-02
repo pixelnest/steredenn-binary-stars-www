@@ -31,10 +31,21 @@ export default () => {
         Steredenn: Binary Stars is coming to <strong>Nintendo Switch</strong> on{' '}
         <strong>March 8th, 2018</strong>
       </h1>
+      <p>
+        Steredenn: Binary Stars is a hugely improved and massively expanded
+        version of the{' '}
+        <a href="http://steredenn.pixelnest.io/classic/">original Steredenn</a>.
+      </p>
+      <p>Prepare for the ultimate Steredenn experience!</p>
       <YoutubeEmbed code="pziwBxhTpAs" />
       <p>
-        Prepare for the ultimate Steredenn experience. Hugely improved and
-        massively expanded, this is Steredenn: Binary Stars.
+        Steredenn: Binary Stars is an award-winning mashup of a classic{' '}
+        <strong>shmup</strong> and a <strong>rogue-like</strong>, carved in big
+        beautiful pixels, with insane boss battles.
+      </p>
+      <p>
+        <strong>Fly solo or co-op with a friend</strong>, fighting off the worst
+        scourges of space in a never-ending struggle for survival.
       </p>
       <p>
         Read the{' '}
@@ -43,10 +54,6 @@ export default () => {
         </Link>{' '}
         about the new features and the thought process behind Steredenn: Binary
         Stars.
-      </p>
-      <p>
-        Find more information about Steredenn: Classic{' '}
-        <a href="http://steredenn.pixelnest.io/classic/">here</a>.
       </p>
     </Wrapper>
   )
