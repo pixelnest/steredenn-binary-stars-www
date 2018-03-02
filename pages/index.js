@@ -7,6 +7,7 @@ import Teaser from '../components/Teaser'
 import AwardsContainer from '../components/AwardsContainer'
 import YoutubeEmbed from '../components/YoutubeEmbed'
 
+import Bandcamp from '../components/Bandcamp'
 import Gallery from '../components/Gallery'
 
 import screenshots from '../content/screenshots'
@@ -20,6 +21,7 @@ export default () => {
     <Page>
       <Teaser />
       <AwardsContainer />
+      <Bandcamp />
       <Gallery source={screenshots} />
     </Page>
   )
