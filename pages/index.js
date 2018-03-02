@@ -10,7 +10,7 @@ import YoutubeEmbed from '../components/YoutubeEmbed'
 import Bandcamp from '../components/Bandcamp'
 import Gallery from '../components/Gallery'
 
-import {screenshots} from '../content/images'
+import {gifs, screenshots} from '../content/images'
 
 // -------------------------------------------------------------
 // Main page.
@@ -22,7 +22,8 @@ export default () => {
       <Teaser />
       <AwardsContainer />
       <Bandcamp />
-      <Gallery source={screenshots} />
+      <Gallery source={gifs} totalWidth="556px" elementWidth="270px" />
+      <Gallery source={screenshots} totalWidth="572px" elementWidth="180px" />
     </Page>
   )
 }
