@@ -1,4 +1,5 @@
 export const screenshots = {
+  label: 'Screenshot',
   extension: 'png',
   thumbnailExtension: 'jpg',
   folder: '/static/images/screenshots',
@@ -29,9 +30,12 @@ export const screenshots = {
 }
 
 export const gifs = {
+  label: 'Gif',
   extension: 'gif',
   thumbnailExtension: 'gif',
   folder: '/static/images/gifs',
   thumbnailFolder: '/static/images/gifs/thumbs',
+  lazyLoad: true,
+  lazyLoadPlaceholder: '/static/images/gifs/thumbs/blank.gif',
   data: ['10', '01', '04', '06', '07', '23', '18', '19', '21', '03']
 }

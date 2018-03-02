@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 import styled from 'styled-components'
-import {Breakpoints} from '../styles/values'
+import {rgba} from 'polished'
+import {Colors, Breakpoints} from '../styles/values'
+
+import LazyLoader from './LazyLoader'
 
 // -------------------------------------------------------------
 // Components.
@@ -37,6 +40,7 @@ const Thumbnail = styled.a`
 
     border: 1px solid black;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    background: ${rgba(Colors.Brand, 0.1)};
 
     transition: all 0.2s ease-out;
   }
@@ -54,13 +58,26 @@ const Element = ({filename, source, width}) => {
   const image = `${folder}/${filename}.${extension}`
   const thumbnail = `${thumbnailFolder}/${filename}.${thumbnailExtension}`
 
-  const titleLabel = `Image #${filename}`
+  const label = `${source.label} #${filename}`
 
-  return (
+  const createElement = src => (
     <Thumbnail href={image} width={width}>
-      <img src={thumbnail} title={titleLabel} alt={titleLabel} />
+      <img src={src} title={label} alt={label} />
     </Thumbnail>
   )
+
+  // Should lazy load?
+  if (source.lazyLoad) {
+    return (
+      <LazyLoader
+        render={shouldLoad =>
+          createElement(shouldLoad ? thumbnail : source.lazyLoadPlaceholder)
+        }
+      />
+    )
+  }
+
+  return createElement(thumbnail)
 }
 
 // -------------------------------------------------------------
