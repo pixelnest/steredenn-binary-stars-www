@@ -13,7 +13,7 @@ const GalleryContainer = styled.div`
   justify-content: space-between;
 
   /* Hack to get a gap. */
-  max-width: calc((180px * 3) + 2rem + 2rem);
+  max-width: ${props => props.width};
 
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +31,7 @@ const Thumbnail = styled.a`
   img {
     display: block;
 
-    max-width: 180px;
+    max-width: ${props => props.width};
 
     margin-bottom: 2rem;
 
@@ -48,7 +48,7 @@ const Thumbnail = styled.a`
   }
 `
 
-const Element = ({filename, source}) => {
+const Element = ({filename, source, width}) => {
   const {folder, thumbnailFolder, extension, thumbnailExtension} = source
 
   const image = `${folder}/${filename}.${extension}`
@@ -57,7 +57,7 @@ const Element = ({filename, source}) => {
   const titleLabel = `Image #${filename}`
 
   return (
-    <Thumbnail href={image}>
+    <Thumbnail href={image} width={width}>
       <img src={thumbnail} title={titleLabel} alt={titleLabel} />
     </Thumbnail>
   )
@@ -67,12 +67,14 @@ const Element = ({filename, source}) => {
 // Export.
 // -------------------------------------------------------------
 
-export default ({source}) => {
+export default ({source, totalWidth, elementWidth}) => {
   const {data} = source
 
   return (
-    <GalleryContainer>
-      {data.map(x => <Element key={x} filename={x} source={source} />)}
+    <GalleryContainer width={totalWidth}>
+      {data.map(x => (
+        <Element key={x} filename={x} source={source} width={elementWidth} />
+      ))}
     </GalleryContainer>
   )
 }
