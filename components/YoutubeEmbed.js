@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
+import {createShadowBlockMixin} from '../styles/mixins'
+
+// -------------------------------------------------------------
+// Exports.
+// -------------------------------------------------------------
+
 export default function YoutubeEmbed({code}) {
   const Player = styled.p`
     text-align: center;
 
     iframe {
-      border: 1px solid black;
-      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+      ${createShadowBlockMixin()};
     }
 
     @media (max-width: 800px) {
