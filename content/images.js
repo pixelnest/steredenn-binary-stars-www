@@ -33,5 +33,5 @@ export const gifs = {
   thumbnailExtension: 'gif',
   folder: '/static/images/gifs',
   thumbnailFolder: '/static/images/gifs/thumbs',
-  data: ['01', '03', '04', '06', '07', '10', '18', '19', '21', '23']
+  data: ['10', '01', '04', '06', '07', '23', '18', '19', '21', '03']
 }
