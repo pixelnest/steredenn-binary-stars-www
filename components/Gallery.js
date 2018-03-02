@@ -60,24 +60,21 @@ const Element = ({filename, source, elementWidth}) => {
 
   const label = `${source.label} #${filename}`
 
-  const createElement = src => (
+  const createImage = src => <img src={src} title={label} alt={label} />
+
+  return (
     <Thumbnail href={image} elementWidth={elementWidth}>
-      <img src={src} title={label} alt={label} />
+      {source.lazyLoad ? (
+        <LazyLoader
+          render={shouldLoad =>
+            createImage(shouldLoad ? thumbnail : source.lazyLoadPlaceholder)
+          }
+        />
+      ) : (
+        createImage(thumbnail)
+      )}
     </Thumbnail>
   )
-
-  // Should lazy load?
-  if (source.lazyLoad) {
-    return (
-      <LazyLoader
-        render={shouldLoad =>
-          createElement(shouldLoad ? thumbnail : source.lazyLoadPlaceholder)
-        }
-      />
-    )
-  }
-
-  return createElement(thumbnail)
 }
 
 // -------------------------------------------------------------
