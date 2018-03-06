@@ -53,10 +53,18 @@ const Thumbnail = styled.a`
 `
 
 const Element = ({filename, source, elementWidth}) => {
-  const {folder, thumbnailFolder, extension, thumbnailExtension} = source
+  const {
+    folder,
+    extension,
+    thumbnailFolder,
+    thumbnailExtension,
+    placeholderFolder,
+    placeholderExtension
+  } = source
 
   const image = `${folder}/${filename}.${extension}`
   const thumbnail = `${thumbnailFolder}/${filename}.${thumbnailExtension}`
+  const placeholder = `${placeholderFolder}/${filename}.${placeholderExtension}`
 
   const label = `${source.label} #${filename}`
 
@@ -67,7 +75,7 @@ const Element = ({filename, source, elementWidth}) => {
       {source.lazyLoad ? (
         <LazyLoader
           render={shouldLoad =>
-            createImage(shouldLoad ? thumbnail : source.lazyLoadPlaceholder)
+            createImage(shouldLoad ? thumbnail : placeholder)
           }
         />
       ) : (
