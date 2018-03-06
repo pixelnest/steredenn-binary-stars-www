@@ -150,7 +150,7 @@ export const StoreMenu = ({}) => {
       <ul>
         <MenuItem color="#C60518" direction="right">
           <a href="https://www.nintendo.com/games/detail/steredenn-binary-stars-switch">
-            Nintendo Switch<span>March 8th - Binary Stars</span>
+            Nintendo Switch<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#F1BD28" direction="right">

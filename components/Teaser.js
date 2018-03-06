@@ -28,8 +28,8 @@ export default () => {
   return (
     <Wrapper>
       <h1>
-        Steredenn: Binary Stars is coming to <strong>Nintendo Switch</strong> on{' '}
-        <strong>March 8th, 2018</strong>
+        Steredenn: Binary Stars is <strong>OUT NOW</strong> on{' '}
+        <strong>Nintendo Switch</strong>
       </h1>
       <p>
         Steredenn: Binary Stars is a hugely improved and massively expanded
@@ -37,7 +37,7 @@ export default () => {
         <a href="http://steredenn.pixelnest.io/classic/">original Steredenn</a>.
       </p>
       <p>Prepare for the ultimate Steredenn experience!</p>
-      <YoutubeEmbed code="pziwBxhTpAs" />
+      <YoutubeEmbed code="iBG9yqcXB-4" />
       <p>
         Steredenn: Binary Stars is an award-winning mashup of a classic{' '}
         <strong>shmup</strong> and a <strong>rogue-like</strong>, carved in big
