@@ -125,6 +125,11 @@ export const SocialMenu = ({}) => {
           </Link>
         </MenuItem>
         <MenuItem>
+          <Link href="/updates">
+            <a>Changelogs</a>
+          </Link>
+        </MenuItem>
+        <MenuItem>
           <a href="https://twitter.com/pixelnest/">Twitter</a>
         </MenuItem>
         <MenuItem>
