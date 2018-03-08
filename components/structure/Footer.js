@@ -46,6 +46,9 @@ export default function Footer() {
         <li>
           <a href="https://facebook.com/pixelneststudio/">Facebook</a>
         </li>
+        <li>
+          <a href="https://instagram.com/pixelneststudio/">Instagram</a>
+        </li>
       </HList>
       <p>
         (c) 2018 <a href="http://pixelnest.io">Pixelnest Studio</a> - we craft

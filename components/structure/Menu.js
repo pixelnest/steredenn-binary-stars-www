@@ -130,18 +130,21 @@ export const SocialMenu = ({}) => {
           </Link>
         </MenuItem>
         <MenuItem>
+          <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
+            Presskit
+          </a>
+        </MenuItem>
+        <MenuItem>
           <a href="https://twitter.com/pixelnest/">Twitter</a>
         </MenuItem>
         <MenuItem>
           <a href="https://facebook.com/pixelneststudio/">Facebook</a>
         </MenuItem>
         <MenuItem>
-          <a href="mailto:steredenn@pixelnest.io">Contact</a>
+          <a href="https://instagram.com/pixelneststudio/">Instagram</a>
         </MenuItem>
         <MenuItem>
-          <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
-            Presskit
-          </a>
+          <a href="mailto:steredenn@pixelnest.io">Contact</a>
         </MenuItem>
       </ul>
     </Menu>
