@@ -52,10 +52,13 @@ const Article = styled.article`
 
     color: ${TINTED_COLOR};
 
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   h3 {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 1.1em;
   }
 
@@ -68,27 +71,39 @@ const Article = styled.article`
   h6 {
   }
 
-  p + h1 {
+  p + h1,
+  ul + h1,
+  ol + h1 {
     margin-top: 10rem;
   }
 
-  p + h2 {
+  p + h2,
+  ul + h2,
+  ol + h2 {
     margin-top: 8rem;
   }
 
-  p + h3 {
+  p + h3,
+  ul + h3,
+  ol + h3 {
     margin-top: 6rem;
   }
 
-  p + h4 {
+  p + h4,
+  ul + h4,
+  ol + h4 {
     margin-top: 5rem;
   }
 
-  p + h5 {
+  p + h5,
+  ul + h5,
+  ol + h5 {
     margin-top: 4rem;
   }
 
-  p + h6 {
+  p + h6,
+  ul + h6,
+  ol + h6 {
     margin-top: 3rem;
   }
 
@@ -99,6 +114,15 @@ const Article = styled.article`
 
   li {
     margin-bottom: 2rem;
+  }
+
+  hr {
+    color: ${rgba(Colors.Brand, 0.5)};
+    width: 50%;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    border: none;
+    border-bottom: 1px solid;
   }
 `
 
