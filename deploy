@@ -23,14 +23,17 @@ if [ -z "$DESTINATION" ]; then
   exit 1
 fi
 
-echo $DESTINATION
-exit
+echo "Deploying to '$DESTINATION'…"
 
 # --------------------------------------------------------------
 # Deploy.
 # --------------------------------------------------------------
 
+echo 'Creating latest build…'
+
 yarn run export
+
+echo 'Syncing…'
 
 # Trailing slash after out is important!
 # It means it won't copy the folder, but its content,
@@ -40,5 +43,9 @@ rsync -vaz out/ $DESTINATION:/var/www/steredenn
 
 ssh $DESTINATION 'service nginx restart'
 
+echo 'Cleaning…'
+
 # Clean.
 rm -rf out
+
+echo 'Done.'
