@@ -8,14 +8,14 @@ if [ -z "$DESTINATION" ]; then
 fi
 
 yarn run export
-scp -r out $DESTINATION:/var/www/
 
-ssh $DESTINATION 'cd /var/www/ && \
-                  mv steredenn.pixelnest.io/classic/ classic/ && \
-                  mv steredenn.pixelnest.io/public/ public/ && \
-                  rm -rf steredenn.pixelnest.io && \
-                  mv out steredenn.pixelnest.io && \
-                  mv classic/ steredenn.pixelnest.io/ && \
-                  mv public/ steredenn.pixelnest.io/ && \
-                  service nginx restart'
+# Trailing slash after out is important!
+# It means it won't copy the folder, but its content,
+# allowing us to have a different name from
+# the source (`out`) and the target (`steredenn`).
+rsync -vaz out/ $DESTINATION:/var/www/steredenn
 
+ssh $DESTINATION 'service nginx restart'
+
+# Clean.
+rm -rf out
