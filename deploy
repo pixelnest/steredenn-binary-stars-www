@@ -1,11 +1,34 @@
 #!/usr/bin/env bash
 
-DESTINATION=$1
+BASEDIR=$(dirname $0)
+cd $BASEDIR
 
-if [ -z "$DESTINATION" ]; then
-  echo "Error: no user@server argument. Abort..."
-  exit 0
+source .env
+
+# --------------------------------------------------------------
+# Get destination.
+# --------------------------------------------------------------
+
+if [ "$1" ]; then
+  # Use the first argument as destination if provided.
+  DESTINATION=$1
+else
+  # Look for a variable provided in the .env file.
+  DESTINATION="$SERVER_NAME"
 fi
+
+# Try if it exists.
+if [ -z "$DESTINATION" ]; then
+  echo "Error: no destination provided (as .env variable or argument)."
+  exit 1
+fi
+
+echo $DESTINATION
+exit
+
+# --------------------------------------------------------------
+# Deploy.
+# --------------------------------------------------------------
 
 yarn run export
 

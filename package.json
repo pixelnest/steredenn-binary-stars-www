@@ -13,7 +13,8 @@
     "start": "next",
     "build": "next build",
     "prod": "next build && next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "deploy": "./deploy"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.0",

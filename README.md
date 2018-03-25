@@ -1,8 +1,30 @@
 # Steredenn: Binary Stars
 
-## Getting Started
+## Develop
 
 ```
 yarn install
-yarn dev
+yarn start
+```
+
+## Static export
+
+```
+yarn run export
+```
+
+## Deploy
+
+Create a `.env` file, and add:
+
+```
+SERVER_NAME=
+```
+
+With the name of your server.
+
+Then:
+
+```
+yarn run deploy
 ```
