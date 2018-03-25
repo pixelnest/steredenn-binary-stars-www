@@ -39,7 +39,7 @@ echo 'Syncing…'
 # It means it won't copy the folder, but its content,
 # allowing us to have a different name from
 # the source (`out`) and the target (`steredenn`).
-rsync -vaz out/ $DESTINATION:/var/www/steredenn
+rsync -vazh --delete out/ $DESTINATION:/var/www/steredenn
 
 ssh $DESTINATION 'service nginx restart'
 
