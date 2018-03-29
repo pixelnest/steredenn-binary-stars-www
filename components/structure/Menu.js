@@ -79,6 +79,12 @@ const MenuItem = styled.li`
   }
 `
 
+const NormalLinkMenuItem = styled.li`
+  padding: 1rem;
+  font-size: 0.8em;
+  text-transform: uppercase;
+`
+
 // -------------------------------------------------------------
 // Functions.
 // -------------------------------------------------------------
@@ -181,6 +187,13 @@ export const StoreMenu = ({}) => {
             iPhone/iPad<span>Classic</span>
           </a>
         </MenuItem>
+        <NormalLinkMenuItem>
+          <Link href="/progress">
+            <a>
+              When is Binary Stars<br />coming to my platform?
+            </a>
+          </Link>
+        </NormalLinkMenuItem>
       </ul>
     </Menu>
   )
