@@ -85,6 +85,10 @@ const NormalLinkMenuItem = styled.li`
   padding: 1rem;
   font-size: 0.8em;
   text-transform: uppercase;
+
+  @media (min-width: ${Breakpoints.ShowVerticalNavigation}) {
+    max-width: 200px;
+  }
 `
 
 // -------------------------------------------------------------
