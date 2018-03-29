@@ -1,12 +1,76 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
 import {rgba} from 'polished'
+import html2canvas from 'html2canvas'
 
 import {Colors, Breakpoints} from '../styles/values'
 
 import Page from '../components/structure/Page'
 
 import content from '../content/progress'
+
+// -------------------------------------------------------------
+// Image Renderer Components.
+// -------------------------------------------------------------
+
+const ExportButton = styled.a`
+  display: block;
+  padding: 2rem 0;
+  text-align: right;
+  text-transform: uppercase;
+`
+
+const ShareImageContainer = styled.section`
+  padding-top: 8rem;
+  text-align: center;
+
+  img {
+    max-width: 75%;
+  }
+`
+
+class ImageRenderer extends React.Component {
+  constructor() {
+    super()
+    this.state = {image: null}
+  }
+
+  handleClick = e => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    const el = document.getElementById(this.props.target)
+    const opts = {
+      backgroundColor: 'black'
+    }
+
+    html2canvas(el, opts).then(canvas => {
+      const image = canvas.toDataURL('image/png')
+      this.setState({image})
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <ExportButton href="#" onClick={this.handleClick}>
+          Create Image
+        </ExportButton>
+
+        {this.state.image && (
+          <ShareImageContainer>
+            <h3>Share image</h3>
+            <img
+              src={this.state.image}
+              alt="Steredenn: Binary Stars Platforms Progress Status"
+              title="Steredenn: Binary Stars Platforms Progress Status"
+            />
+          </ShareImageContainer>
+        )}
+      </div>
+    )
+  }
+}
 
 // -------------------------------------------------------------
 // Components.
@@ -149,13 +213,15 @@ export default () => {
 
   return (
     <Page>
-      <Wrapper>
+      <Wrapper id="progress">
         <Title>Steredenn: Binary Stars</Title>
         <SubTitle>Platforms Progress Status</SubTitle>
         <ProgressTable>
           <tbody>{sorted.map(x => <Platform key={x.name} {...x} />)}</tbody>
         </ProgressTable>
       </Wrapper>
+
+      <ImageRenderer target="progress" />
     </Page>
   )
 }
