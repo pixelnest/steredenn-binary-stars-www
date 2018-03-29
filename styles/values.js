@@ -13,5 +13,7 @@ export const Colors = {
 
 export const Breakpoints = {
   ShowVerticalNavigation: '1100px',
-  OneColumnScreenshots: '600px'
+  OneColumnScreenshots: '600px',
+  ProgressHideIndicator: '525px',
+  ProgressTwoLines: '425px'
 }
