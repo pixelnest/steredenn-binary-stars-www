@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 import {Colors, Breakpoints} from '../../styles/values'
 
+import IgnoreIfPath from '../IgnoreIfPath'
+
 // -------------------------------------------------------------
 // Components.
 // -------------------------------------------------------------
@@ -187,13 +189,16 @@ export const StoreMenu = ({}) => {
             iPhone/iPad<span>Classic</span>
           </a>
         </MenuItem>
-        <NormalLinkMenuItem>
-          <Link href="/progress">
-            <a>
-              When is Binary Stars<br />coming to my platform?
-            </a>
-          </Link>
-        </NormalLinkMenuItem>
+        <IgnoreIfPath
+          is="/progress"
+          render={props => (
+            <NormalLinkMenuItem>
+              <Link href="/progress">
+                <a>When is Binary Stars coming to my platform?</a>
+              </Link>
+            </NormalLinkMenuItem>
+          )}
+        />
       </ul>
     </Menu>
   )
