@@ -46,9 +46,9 @@ export default function AwardsContainer() {
       </Line>
       <Line>
         <SmallAward
-          rating="5/5"
-          site="Extralife"
-          url="http://www.extralife.fr/test-jv/5285/steredenn-ils-ont-des-shmups-mignons-vive-les-bretons.html"
+          rating="9/10"
+          site="Nintendo Life"
+          url="http://www.nintendolife.com/reviews/switch-eshop/steredenn_binary_stars"
         />
         <SmallAward
           rating="9/10"
@@ -61,14 +61,14 @@ export default function AwardsContainer() {
           url="http://toucharcade.com/2017/05/22/steredenn-review-horns-out-for-this-roguelike-shoot-em-up/"
         />
         <SmallAward
-          rating="15/20"
-          site="jeuxvideo.com"
-          url="http://www.jeuxvideo.com/test/445407/stederenn-un-shooter-rogue-like-explosif.htm"
+          rating="4.5/5"
+          site="Windows Central"
+          url="http://www.windowscentral.com/steredenn-retro-take-saving-galaxy-space-pirates/"
         />
         <SmallAward
-          rating="8/10"
-          site="CanardPC"
-          url="https://boutique.pressenonstop.com/anciens-numeros/voir/canard-pc-326-443"
+          rating="5/5"
+          site="Extralife"
+          url="http://www.extralife.fr/test-jv/5285/steredenn-ils-ont-des-shmups-mignons-vive-les-bretons.html"
         />
       </Line>
       <Line>
@@ -83,19 +83,20 @@ export default function AwardsContainer() {
           url="http://www.spaziogames.it/recensioni_videogiochi/console_pc/18421/steredenn.aspx"
         />
         <SmallAward
-          rating="88%"
+          rating="89%"
           site="Steam"
           url="http://store.steampowered.com/app/347160/Steredenn/"
         />
+
         <SmallAward
-          rating="4.5/5"
-          site="Windows Central"
-          url="http://www.windowscentral.com/steredenn-retro-take-saving-galaxy-space-pirates/"
+          rating="15/20"
+          site="jeuxvideo.com"
+          url="http://www.jeuxvideo.com/test/445407/stederenn-un-shooter-rogue-like-explosif.htm"
         />
         <SmallAward
-          rating="9/10"
-          site="Epicreviews"
-          url="http://www.epic-reviews.ml/steredenn-review/"
+          rating="8/10"
+          site="CanardPC"
+          url="https://boutique.pressenonstop.com/anciens-numeros/voir/canard-pc-326-443"
         />
       </Line>
     </Container>
