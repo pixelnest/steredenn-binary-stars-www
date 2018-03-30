@@ -1,9 +1,8 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
-import Head from 'next/head'
 
+import ChangeMeta from '../components/structure/ChangeMeta'
 import Page from '../components/structure/Page'
-
 import Markdown from '../components/Markdown'
 
 import content from '../content/updates'
@@ -18,13 +17,6 @@ export default () => {
 
   return (
     <Fragment>
-      <Head>
-        <title>{title}</title>
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={first.description} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={first.description} />
-      </Head>
       <Page>
         {content.map(({tag, text}) => {
           const stringTag = tag.replace(/\./gi, '_')
@@ -35,6 +27,7 @@ export default () => {
           )
         })}
       </Page>
+      <ChangeMeta title={title} description={first.description} />
     </Fragment>
   )
 }
