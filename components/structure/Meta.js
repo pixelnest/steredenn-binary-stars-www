@@ -141,15 +141,10 @@ const Description = () => {
 const OpenGraph = () => {
   return (
     <Fragment>
-      <meta property="og:title" content="Steredenn" />
       <meta property="og:site_name" content="Steredenn" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="http://steredenn.pixelnest.io" />
       <meta property="og:locale" content="en" />
-      <meta
-        property="og:description"
-        content="Steredenn is a space shooter-roguelike video game made by Pixelnest Studio."
-      />
       <meta
         property="og:image"
         content="http://steredenn.pixelnest.io/static/images/card.png"
@@ -164,11 +159,6 @@ const OpenGraph = () => {
 const Twitter = () => {
   return (
     <Fragment>
-      <meta name="twitter:title" content="Steredenn" />
-      <meta
-        name="twitter:description"
-        content="Steredenn is a space shooter-roguelike video game made by Pixelnest Studio."
-      />
       <meta name="twitter:card" content="photo" />
       <meta name="twitter:site" content="http://steredenn.pixelnest.io" />
       <meta name="twitter:creator" content="pixelnest" />
@@ -196,10 +186,8 @@ export default () => {
   return (
     <Fragment>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Steredenn: Binary Stars</title>
 
       <link rel="shortcut icon" href="/static/favicon.ico?v=0003" />
-
       <link
         rel="alternate"
         type="application/rss+xml"
