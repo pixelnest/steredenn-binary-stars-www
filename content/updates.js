@@ -1,6 +1,6 @@
 export default {
   '2.1.0': `
-# Steredenn 2.1.0: Switching Guns
+# [Steredenn 2.1.0: Switching Guns](#update_2_1_0)
 
 Finally! A new patch with many critical fixes and improvements for Binary Stars.
 
@@ -98,7 +98,7 @@ It never ends! Like the universe… ha ha… ha? 🙄
 - The initial music (with specialist and baron) is incorrect or paused after a restart.
   `,
   '2.0.0': `
-# Steredenn 2.0.0: Binary Stars
+# [Steredenn 2.0.0: Binary Stars](#update_2_0_0)
 
 After a year of work, we are excited to release **Steredenn: Binary Stars**, the hugely improved and massively expanded version of Steredenn.
 
