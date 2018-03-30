@@ -165,9 +165,14 @@ const Twitter = () => {
   return (
     <Fragment>
       <meta name="twitter:title" content="Steredenn" />
-      <meta name="twitter:site" content="http://steredenn.pixelnest.io" />
-      <meta name="twitter:url" content="http://steredenn.pixelnest.io" />
+      <meta
+        name="twitter:description"
+        content="Steredenn is a space shooter-roguelike video game made by Pixelnest Studio."
+      />
       <meta name="twitter:card" content="photo" />
+      <meta name="twitter:site" content="http://steredenn.pixelnest.io" />
+      <meta name="twitter:creator" content="pixelnest" />
+      <meta name="twitter:url" content="http://steredenn.pixelnest.io" />
       <meta
         name="twitter:image:src"
         content="http://steredenn.pixelnest.io/static/images/card.png"
