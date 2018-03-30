@@ -12,6 +12,11 @@ import {Colors} from '../styles/values'
 
 const TINTED_COLOR = tint(0.5, Colors.BrandLight)
 
+const Wrapper = styled.div`
+  margin-bottom: 10rem;
+  background-color: ${rgba('black', 0.4)};
+`
+
 const Article = styled.article`
   padding: 4rem;
 
@@ -130,10 +135,12 @@ const Article = styled.article`
 // Export.
 // -------------------------------------------------------------
 
-export default ({children}) => {
+export default ({id, children}) => {
   return (
-    <Article>
-      <ReactMarkdown source={children} />
-    </Article>
+    <Wrapper>
+      <Article id={id}>
+        <ReactMarkdown source={children} />
+      </Article>
+    </Wrapper>
   )
 }
