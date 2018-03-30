@@ -1,5 +1,8 @@
-export default {
-  '2.1.0': `
+export default [
+  {
+    tag: '2.1.0',
+    description: 'Steredenn 2.1.0: Switching Guns',
+    text: `
 # [Steredenn 2.1.0: Switching Guns](#update_2_1_0)
 
 Finally! A new patch with many critical fixes and improvements for Binary Stars.
@@ -96,8 +99,12 @@ It never ends! Like the universe… ha ha… ha? 🙄
 ### Known issues
 
 - The initial music (with specialist and baron) is incorrect or paused after a restart.
-  `,
-  '2.0.0': `
+  `
+  },
+  {
+    tag: '2.0.0',
+    description: 'Steredenn 2.0.0: Binary Stars',
+    text: `
 # [Steredenn 2.0.0: Binary Stars](#update_2_0_0)
 
 After a year of work, we are excited to release **Steredenn: Binary Stars**, the hugely improved and massively expanded version of Steredenn.
@@ -265,4 +272,5 @@ Let's end with some statistics (from February 22nd, 2018):
 - We moved \`552\` cards in our Trello board, only for **Binary Stars**.
 - We use \`Unity 2017.3\`. We started with \`Unity 4.3\`. This means many migrations throughout the lifetime of the game.
   `
-}
+  }
+]
