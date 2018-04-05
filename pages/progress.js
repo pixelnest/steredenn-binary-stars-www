@@ -165,20 +165,11 @@ const ProgressBar = ({x}) => {
   )
 }
 
-const StatusBar = ({x}) => {
-  const Item = ({color = 'white', children}) => (
-    <span style={{color: color}}>{children}</span>
-  )
-
-  if (x >= 1) return <Item color={Colors.Brand}>Released</Item>
-  if (x >= 0.75) return <Item color="#01A1ED">Patch ready</Item>
-  if (x >= 0.5) return <Item>Patch in review</Item>
-  if (x >= 0.25) return <Item>Patch in dev</Item>
-
-  return <Item color="#FF5757">Not started</Item>
+const StatusBar = ({text, color}) => {
+  return <span style={{color: color || 'white'}}>{text}</span>
 }
 
-const Platform = ({name, progress}) => {
+const Platform = ({name, progress, text, color}) => {
   return (
     <tr>
       <NameCell>{name}</NameCell>
@@ -186,7 +177,7 @@ const Platform = ({name, progress}) => {
         <ProgressBar x={progress} />
       </ProgressCell>
       <StatusCell>
-        <StatusBar x={progress} />
+        <StatusBar text={text} color={color} />
       </StatusCell>
     </tr>
   )
