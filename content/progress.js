@@ -8,5 +8,5 @@ export default [
   },
   {name: 'Xbox One', progress: '0.7', text: 'Patch in review'},
   {name: 'PlayStation 4', progress: '0.7', text: 'Patch in review'},
-  {name: 'iPhone/iPad', progress: '0.1', text: 'Starting', color: '#FF5757'}
+  {name: 'iPhone/iPad', progress: '0.25', text: 'Development', color: '#FF5757'}
 ]
