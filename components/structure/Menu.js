@@ -175,7 +175,7 @@ export const StoreMenu = ({}) => {
         </MenuItem>
         <MenuItem color="#F1BD28" direction="right">
           <a href="http://store.steampowered.com/app/347160">
-            Steam<span>Classic</span>
+            Steam<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
