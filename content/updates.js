@@ -1,5 +1,43 @@
 export default [
   {
+    tag: '2.1.1',
+    description: 'Steredenn 2.1.1: Orbit Correction',
+    text: `
+# [Steredenn 2.1.1: Orbit Correction](#update_2_1_1)
+
+We continue with a bunch of small improvements and fixes, especially for Steam, Xbox One, and PS4 releases.
+
+The main improvement is on the UI, where we finally found a way to improve retina screens support (offering us the chance to remove many hacks that were required with previous Unity versions). This is cleaner and better, yay. 🙋‍♀️🙋‍♂️
+
+---
+
+## Changelog
+
+### Features
+
+* Cinema mode is now permanent and you have to disable it manually in the settings.
+
+### Bug fixes/technical stuffs
+
+* Fix incorrect music (or no music) after a restart with the Specialist.
+* Fix tons of hacks in the UI, allowing us to handle resolution changes and retina screens correctly all the time.
+* Fix white noise sound staying after being defeated by the Nemesis.
+* Fix (again) bots and Autocannon targeting an out-of-screen enemy.
+* Fix a sound bug at the end of the Arena.
+* Fix a bug with Mines and generators.
+* Fix a bug with Shotgun and EMP mines.
+
+### Balance
+
+* Increase Helixer's side cannons damages.
+* Decrease Helixer's main cannon damage. Overall, the Helixer deals more damage.
+* Increase cooldown of Stasisbot.
+* Increase cooldown of Frag Missile.
+* Reduce movement speed of Frag Missile.
+* Change combo bonus of "SUPERMASSIVE GLORIOUS SURVIVOR" artefact.
+    `
+  },
+  {
     tag: '2.1.0',
     description: 'Steredenn 2.1.0: Switching Guns',
     text: `
