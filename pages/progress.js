@@ -188,7 +188,7 @@ const Platform = ({name, progress, text, color}) => {
 // -------------------------------------------------------------
 
 function isBigger(a, b) {
-  return a - b
+  return a * 100 - b * 100
 }
 
 function repeat(w, x) {
