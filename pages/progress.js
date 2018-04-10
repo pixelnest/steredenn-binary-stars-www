@@ -10,6 +10,12 @@ import Page from '../components/structure/Page'
 import content from '../content/progress'
 
 // -------------------------------------------------------------
+// Constants.
+// -------------------------------------------------------------
+
+const SORTED_LIST = content.sort(isBigger)
+
+// -------------------------------------------------------------
 // Image Renderer Components.
 // -------------------------------------------------------------
 
@@ -200,15 +206,15 @@ function repeat(w, x) {
 // -------------------------------------------------------------
 
 export default () => {
-  const sorted = content.sort(isBigger)
-
   return (
     <Page>
       <Wrapper id="progress">
         <Title>Steredenn: Binary Stars</Title>
         <SubTitle>Platforms Progress Status</SubTitle>
         <ProgressTable>
-          <tbody>{sorted.map(x => <Platform key={x.name} {...x} />)}</tbody>
+          <tbody>
+            {SORTED_LIST.map(x => <Platform key={x.name} {...x} />)}
+          </tbody>
         </ProgressTable>
       </Wrapper>
 
