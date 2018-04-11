@@ -28,9 +28,9 @@ export default () => {
   return (
     <Wrapper>
       <h1>
-        Steredenn: Binary Stars is<br />
-        <strong>OUT NOW</strong> on <strong>Nintendo Switch</strong> and{' '}
-        <strong>Steam</strong>
+        Steredenn: Binary Stars is <strong>OUT NOW</strong> on{' '}
+        <strong>Nintendo Switch</strong>, <strong>Steam</strong> and{' '}
+        <strong>Xbox One</strong>
       </h1>
       <p>
         Steredenn: Binary Stars is a hugely improved and massively expanded

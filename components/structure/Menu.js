@@ -185,7 +185,7 @@ export const StoreMenu = ({}) => {
         </MenuItem>
         <MenuItem color="#98C73D" direction="right">
           <a href="http://store.xbox.com/en-US/Xbox-One/Games/Steredenn/d31b7d58-a407-4c4a-84ec-3dab1911a0c7">
-            Xbox One<span>Classic</span>
+            Xbox One<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#B06FCB" direction="right">
