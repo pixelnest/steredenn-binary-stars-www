@@ -1,5 +1,38 @@
 export default [
   {
+    tag: '2.1.2',
+    description: 'Steredenn 2.1.2: Course Correction',
+    text: `
+# [Steredenn 2.1.2: Course Correction](#update_2_1_2)
+
+We hope that Steredenn: Binary Stars filled all your hopes and dreams!
+
+But alas, there's no release without its usual list of small bugs! 😫
+
+Fixed! Squashed! Here we go.
+
+---
+
+## Changelog
+
+### Bug fixes/technical stuffs
+
+* Fix co-op controllers issue (allow playing online with Parsec).
+* Fix Heavy Shielder and Ancient Power artefact bug.
+* Fix separator error in scores.
+* Fix Specialist unable to choose its weapons in Arena.
+* Fix double panels bug in the UI when using the bumpers.
+* Fix Red Baron being pushed outside of the screen.
+* Fix small typo.
+
+### Balance
+
+* Increase Red Baron laser damage.
+* Increase Red Baron bullet damage.
+* Reduce Frag Missile radius.
+    `
+  },
+  {
     tag: '2.1.1',
     description: 'Steredenn 2.1.1: Orbit Correction',
     text: `
