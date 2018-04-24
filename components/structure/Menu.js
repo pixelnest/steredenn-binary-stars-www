@@ -179,7 +179,7 @@ export const StoreMenu = ({}) => {
           </a>
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
-          <a href="https://store.playstation.com/#!/steredenn/cid=EP1302-CUSA04998_00-STEREDENN0000PXN">
+          <a href="https://store.playstation.com/?resolve=EP1302-CUSA04998_00-STEREDENN0000PXN">
             PS4<span>Classic</span>
           </a>
         </MenuItem>
