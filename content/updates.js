@@ -1,5 +1,83 @@
 export default [
   {
+    tag: '2.2.0',
+    description: 'Steredenn 2.2.0: Next-Generation',
+    text: `
+# [Steredenn 2.2.0: Next-Generation](#update_2_2_0)
+
+Another big patch with many bug fixes and small improvements.
+
+The main area we focused on is the special abilities of the Tempest and Fury. 🚀
+
+---
+
+## Changelog
+
+### Features
+
+* Change Alien Threat trigger. This change allows the use of the Ancient Power in more builds, without requiring a fight against the Alien Threat. Have fun!
+* Show seed in Game Over (bottom center!).
+* Add keyboard input in Superplay (guaranteed only on Windows).
+* Improve Breton translation.
+
+### Bug fixes/technical stuffs
+
+* Fix the grenade animation of the Red Baron.
+* Fix an animation bug with lasers.
+* Fix a trail bug with the Red Baron in the Arena.
+* Fix a background bug after hyperspace.
+* Fix a bug where the Mothership never ended in the Arena.
+* Fix a bug with the Lightsaber and Gloryhammer.
+* Fix a bug with the Gloryhammer.
+* Fix a bug with Demuxbot and Gloryhammer pushing enemies too far away.
+* Fix a bug with many Drillerbots.
+* Fix a bug with bindings in settings.
+* Fix a bug with Chain Reaction cancelling suicide bullets.
+* Fix a bug with the destruction of suicide bullets.
+* Fix a bug with bots and Alien Threat boss.
+* Fix a bug with the Alien Threat not ending.
+* Fix a bug with the Minefield.
+* Fix a bug with the Daily Run daily unlocking.
+* Vanish bullets on Battleship's third pattern.
+* Vanish more bullets on destruction.
+* Improve some bots performances.
+* Improve performances of suicide bullets.
+* Improve Frag Missile and Rocket Circus performances on startup.
+* Improve seed generation.
+
+### Balance
+
+* Reduce Flamebot damage.
+* Balance Drillerbot.
+* Increase Ancient Power damage.
+* The "None" artefact has a smaller difficulty boost than the other (10% instead of 20%).
+* If you trigger several minibosses, the Red Baron fight is favored.
+* Reduce SUPERCHABAL speed boost in loops.
+* Tweak achievements.
+
+#### Tempest
+
+* Rework Tempest's special ability. It's a classic shockwave now. Simpler but better. Each weapon has a custom shockwave, changing the damage and area.
+
+#### Fury
+
+* Add a few iframes when the Fury lands after using its special ability.
+* Increase the speed of the Fury's ghost (special ability).
+* Increase precision of the Fury's special ability.
+* Reduce the area of the explosions of the Fury's special ability.
+
+### Steam
+
+* Add a modal when a score is not sent.
+* Fix Boss Rush scores.
+* Fix a best score issue.
+
+### Nintendo Switch
+
+* Remove Applet Controller from the pause.
+    `
+  },
+  {
     tag: '2.1.2',
     description: 'Steredenn 2.1.2: Course Correction',
     text: `
