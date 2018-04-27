@@ -20,6 +20,10 @@ export default function Footer() {
       margin: 0;
     }
 
+    p.add-space {
+      margin-bottom: 2rem;
+    }
+
     p {
       font-size: 0.8em;
     }
@@ -34,8 +38,20 @@ export default function Footer() {
     }
   `
 
+  const Ratings = styled.img`
+    width: 234px;
+    height: 73px;
+  `
+
   return (
     <Wrapper>
+      <p className="add-space">
+        <Ratings
+          src="/static/images/pages/ratings.png"
+          title="ESRB 10+ and PEGI 7"
+          alt="ESRB 10+ and PEGI 7"
+        />
+      </p>
       <HList>
         <li>
           <a href="http://pixelnest.io/">Website</a>
