@@ -180,7 +180,7 @@ export const StoreMenu = ({}) => {
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
           <a href="https://store.playstation.com/?resolve=EP1302-CUSA04998_00-STEREDENN0000PXN">
-            PS4<span>Classic</span>
+            PS4<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#98C73D" direction="right">
