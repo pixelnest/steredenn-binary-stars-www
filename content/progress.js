@@ -7,6 +7,6 @@ export default [
     color: '#ED9301' /*'#01A1ED'*/
   },
   {name: 'Xbox One', progress: '1', text: 'Released', color: '#ED9301'},
-  {name: 'PlayStation 4', progress: '0.7', text: 'Patch in review'},
+  {name: 'PlayStation 4', progress: '1', text: 'Released', color: '#ED9301'},
   {name: 'iPhone/iPad', progress: '0.25', text: 'Development', color: '#FF5757'}
 ]
