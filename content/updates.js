@@ -1,5 +1,60 @@
 export default [
   {
+    tag: '2.3.0',
+    description: 'Steredenn 2.3.0: Eternity',
+    text: `
+# [Steredenn 2.3.0: Eternity](#update_2_3_0)
+
+Say hello to a new batch of bug fixes and other tweaks.
+
+It's also time for us to say goodbye. 👋
+
+This patch is probably the last big one. At this point, we think the game is in the shape we want, without big bugs remaining. There could always be more tweaks and changes to be done, but at a certain point, we have to stop. And we think that this patch is a good place to say it. 😉
+
+It was a hell of a ride for us, and we want to thank you for playing Steredenn and Steredenn: Binary Stars! We never hoped to have a game this complete, polished and refined as it is now.
+
+[Read more on this Steam post.](https://steamcommunity.com/app/347160/discussions/0/3211505894119774259/)
+
+Thank you. 🙏
+
+Farewell, space wanderers.
+
+---
+
+## Changelog
+
+### Features
+
+* Improve Specialist's weapon drops. It should scale more linearly and offer more variety.
+* Improve Japan translation.
+
+### Bug fixes/technical stuffs
+
+* Improve performances on Stasisgun, Stasisbot and Rocket Circus.
+* Disable leaderboards if a mod is detected.
+* Fix a bug where a Medkit was shown as a Laserbot with the Specialist.
+* Fix a bug where the Asteroworm combat combo bonus wasn't given.
+* Fix a bug with the main menu environment not cleaned properly.
+* Fix a bug with the vibration triggering while doing a pause on an upgrade/artefact.
+* Fix a bug with the seed in Coop making a player controls the other.
+* Fix a bug with the Shockwave and Heavy Shielder.
+* Fix a bug with the tutorial background.
+* Fix a bug with the Laser Shield not working when a daily was started with it.
+* Fix a bug with the Red Baron showing the bad button while hovering on an upgrade.
+* Fix a bug with the loop counter in the Pause.
+* Fix a bug with the trails not cleaned at the end of the SUPERCHABAL fight.
+* Fix a bug with the alien minion creating an infinite wave.
+* Fix a bug on some dodge waves not triggering the combo properly.
+
+### Balance
+
+* Tweak the Mothership in loops.
+* Tweak the Cruiser MK-II in loops.
+* The Shockwave detroys the Heavy Shielder's shield at full charge.
+* Asteroworm's rocks are instantly destroyed by the "Next-Gen Energy Weapons" upgrade. Like it should have always been. 🐛☄️
+    `
+  },
+  {
     tag: '2.2.0',
     description: 'Steredenn 2.2.0: Next-Generation',
     text: `
