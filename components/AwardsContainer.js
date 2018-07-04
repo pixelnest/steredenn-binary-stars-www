@@ -83,7 +83,7 @@ export default function AwardsContainer() {
           url="http://www.spaziogames.it/recensioni_videogiochi/console_pc/18421/steredenn.aspx"
         />
         <SmallAward
-          rating="89%"
+          rating="88%"
           site="Steam"
           url="http://store.steampowered.com/app/347160/Steredenn/"
         />
