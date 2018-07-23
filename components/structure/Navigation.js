@@ -11,6 +11,7 @@ import {SocialMenu, StoreMenu} from './Menu'
 // -------------------------------------------------------------
 
 const SCROLL_THRESHOLD = 450
+const VERTICAL_VIEWPORT_TOO_SMALL_THRESHOLD = 475
 
 // -------------------------------------------------------------
 // Components.
@@ -45,7 +46,7 @@ const Column = props => {
       Indeed, with a fixed positioning, if the element is bigger than the viewport,
       some parts may be hidden.
     */
-    @media (min-width: ${Breakpoints.ShowVerticalNavigation}) and (max-height: 400px) {
+    @media (min-width: ${Breakpoints.ShowVerticalNavigation}) and (max-height: ${VERTICAL_VIEWPORT_TOO_SMALL_THRESHOLD}px) {
       ${absolute};
     }
   `
