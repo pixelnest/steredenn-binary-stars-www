@@ -30,7 +30,7 @@ const GalleryContainer = styled.div`
   }
 `
 
-const Thumbnail = styled.a`
+export const Thumbnail = styled.a`
   img {
     display: block;
 
