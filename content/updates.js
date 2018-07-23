@@ -1,5 +1,39 @@
 export default [
   {
+    tag: '2.3.1',
+    description: 'Steredenn 2.3.1: Eternal Space',
+    text: `
+# [Steredenn 2.3.1: Eternal Space](#update_2_3_1)
+
+Small bug fixes update.
+
+[And a new batch of Binary Stars wallpapers](http://steredenn.pixelnest.io/wallpapers/) — Enjoy!
+
+---
+
+## Changelog
+
+### Features
+
+* Improved Chinese translations. Thanks to **Daymare** for his help!
+
+### Bug fixes/technical stuffs
+
+* Fix a bug with the Drillerbot's ghost.
+* Fix a bug with Japan translation.
+* Fix a bug on Fire Blaster's flames.
+* Fix a bug with the Razerblade's slot.
+* Optimize a bit in loops.
+* Fix a small exception on Cargos.
+* Fix a small exception on Boosterbots.
+* Fix a small exception on suicide bullets.
+
+### Balance
+
+* Remove the wave max time reduction on loops.
+    `
+  },
+  {
     tag: '2.3.0',
     description: 'Steredenn 2.3.0: Eternity',
     text: `
