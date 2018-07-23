@@ -142,6 +142,11 @@ export const SocialMenu = ({}) => {
           </Link>
         </MenuItem>
         <MenuItem>
+          <Link href="/wallpapers">
+            <a>Wallpapers</a>
+          </Link>
+        </MenuItem>
+        <MenuItem>
           <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
             Presskit
           </a>

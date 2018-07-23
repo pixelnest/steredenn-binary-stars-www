@@ -5,7 +5,8 @@ module.exports = {
       '/404/': {page: '/_error'},
       '/faq/': {page: '/faq'},
       '/updates/': {page: '/updates'},
-      '/progress/': {page: '/progress'}
+      '/progress/': {page: '/progress'},
+      '/wallpapers/': {page: '/wallpapers'}
     }
   }
 }
