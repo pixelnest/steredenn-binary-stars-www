@@ -20,16 +20,38 @@ const Title = styled.h1`
 
 const HeroGallery = styled.div`
   display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-  width: 640px;
 
-  a + a {
-    margin-left: 2rem;
+  @media (max-width: 675px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+
+    a:first-of-type {
+      order: 1;
+    }
+
+    a,
+    img {
+      max-width: 100%;
+    }
   }
 
-  img {
-    height: 214px;
+  @media (min-width: 675px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+
+    img {
+      height: 214px;
+    }
+
+    a + a {
+      margin-left: 2rem;
+    }
   }
 `
 
