@@ -1,5 +1,56 @@
 export default [
   {
+    tag: '2.4.0',
+    description: 'Steredenn 2.4.0: The Sixth Extinction',
+    text: `
+# [Steredenn 2.4.0: The Sixth Extinction](#update_2_4_0)
+
+Guess we're all wrong sometime?
+
+We thought the last big patch would be the last, but alas, some bugs crippled the game performances during high-end loops.
+
+We fixed most of the bugs — well, we hope —, and since we were at it, we added some nice little things as well. Better late than never.
+
+However, I should mention that, to correct some of these bugs, we also had to re-balance the loops and some items.
+
+This shall be the last. Thanks again!
+Bye bye, wanderers.
+
+---
+
+## Changelog
+
+### Features
+
+* Add screenshake setting.
+* The Red Baron starts the game with its own background (except if you let the full intro plays).
+
+### Bug fixes/technical stuffs
+
+* Improve performances in loops.
+* Improve performances of suicide bullets.
+* Rework the Stasisgun , Stasisbot, and Rocket Circus animation (the weird blue gel). This should fix most of the bugs that you encountered while using these weapons. And bonus: it's prettier.
+* Fix a crash when a Lightsaber hit an Heavy Shielder.
+* Fix stacking blockers on Mothership.
+* Fix a bug with Bots' ghosts being generated almost endlessly in specific conditions.
+* Fix Stars-less backgrounds.
+* Fix bugs with the Bulletstorm event.
+
+### Balance
+
+* Improve Hypergun. It deals way more damage against normal enemies. It's a bit weaker against bosses.
+* Improve Ultrabeam. Faster, larger, more predictable.
+* Ancient Power doesn't trigger suicide bullets in loops.
+* Tweak Battleship boss' first pattern.
+* Reduce number of blockers in loop 3+.
+* Reset the SUPERCHABAL and Asteroworm counters at the beginning of a loop.
+* Spawn more events in loops.
+* Improve the generation of suicide bullets.
+* Improve the generation of blockers in loops.
+* Rework enemies' bullets speed in loops.
+    `
+  },
+  {
     tag: '2.3.1',
     description: 'Steredenn 2.3.1: Eternal Space',
     text: `
