@@ -13,7 +13,7 @@ const Layer = styled.div`
   position: absolute;
 `
 
-const SmallSunShadowLayer = Layer.extend`
+const SmallSunShadowLayer = styled(Layer)`
   top: 130px !important;
   left: 155px !important;
 
@@ -23,7 +23,7 @@ const SmallSunShadowLayer = Layer.extend`
   background: url('/static/images/parallax/small-shadow.png') no-repeat center;
 `
 
-const SmallSunLayer = Layer.extend`
+const SmallSunLayer = styled(Layer)`
   top: 150px !important;
   left: 200px !important;
 
@@ -33,7 +33,7 @@ const SmallSunLayer = Layer.extend`
   background: url('/static/images/parallax/small.png') no-repeat center;
 `
 
-const SmallSunLightLayer = Layer.extend`
+const SmallSunLightLayer = styled(Layer)`
   top: 180px !important;
   left: 200px !important;
 
@@ -43,7 +43,7 @@ const SmallSunLightLayer = Layer.extend`
   background: url('/static/images/parallax/small-light.png') no-repeat center;
 `
 
-const JunkLayer = Layer.extend`
+const JunkLayer = styled(Layer)`
   top: 150px !important;
   left: auto !important;
   right: 150px !important;
@@ -54,7 +54,7 @@ const JunkLayer = Layer.extend`
   background: url('/static/images/parallax/junk.png') no-repeat right;
 `
 
-const LogoShadowLayer = Layer.extend`
+const LogoShadowLayer = styled(Layer)`
   left: 0;
   right: 0;
 
@@ -63,7 +63,7 @@ const LogoShadowLayer = Layer.extend`
   background: url('/static/images/parallax/logo-shadow.png') no-repeat center;
 `
 
-const LogoLayer = Layer.extend`
+const LogoLayer = styled(Layer)`
   left: 0;
   right: 0;
 
