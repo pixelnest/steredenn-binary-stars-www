@@ -1,5 +1,35 @@
 export default [
   {
+    tag: '2.4.1',
+    description: 'Steredenn 2.4.1: See The Light',
+    text: `
+# [Steredenn 2.4.1: See The Light](#update_2_4_1)
+
+Small bug fixes update.
+
+We will wind down Pixelnest Studio starting January 2019. We had an incredibly fantastic time doing Steredenn and other projects, but it's time for us to move on to other adventures.
+
+Pixelnest Studio will still be alive (for at least a few years), and we'll keep supporting Steredenn, but it won't be our main activity anymore. 👋
+
+It's not a sad ending, quite the contrary in fact: we prefer to end on a very positive note. 😊
+
+[You can read more in our journal.](https://pixelnest.io/2018/11/the-beginning-and-the-end/)
+
+---
+
+## Changelog
+
+### Features
+
+* Add Steam presence.
+
+### Bug fixes/technical stuffs
+
+* Improve Stasisgun/Stasisbot/Rocket Circus pooling.
+* Fix small animation issue with Lightsaber.
+    `
+  },
+  {
     tag: '2.4.0',
     description: 'Steredenn 2.4.0: The Sixth Extinction',
     text: `
