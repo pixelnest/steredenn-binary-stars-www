@@ -1,5 +1,30 @@
 export default [
   {
+    tag: '2.5.0',
+    description: 'Steredenn 2.5.0: Enigma Machine',
+    text: `
+# [Steredenn 2.5.0: Enigma Machine](#update_2_5_0)
+
+Hello,
+
+We found a few bugs in the Daily Run and for some rarer screen aspect ratios. 💥 Boom, fixed. Done. Good job everyone. 🙏
+
+---
+
+## Changelog
+
+### Features
+
+* Add more variety to Daily Run configurations.
+* Increase the chances to have the Fortress, Fury, Specialist or Red Baron in Daily Run configurations.
+
+### Bug fixes/technical stuffs
+
+* Fix a bug with the Red Baron and Specialist in Daily Run.
+* Fix a bug with portrait resolutions (e.g. 1080x1920).
+    `
+  },
+  {
     tag: '2.4.1',
     description: 'Steredenn 2.4.1: See The Light',
     text: `
