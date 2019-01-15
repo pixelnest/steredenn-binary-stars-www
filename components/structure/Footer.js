@@ -67,7 +67,7 @@ export default function Footer() {
         </li>
       </HList>
       <p>
-        (c) 2018 <a href="http://pixelnest.io">Pixelnest Studio</a> - we craft
+        (c) 2019 <a href="http://pixelnest.io">Pixelnest Studio</a> - we craft
         games and apps
       </p>
     </Wrapper>
