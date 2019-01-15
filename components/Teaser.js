@@ -12,7 +12,7 @@ const Wrapper = styled.section`
   text-transform: uppercase;
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   strong {
@@ -30,7 +30,7 @@ export default () => {
       <h1>
         Steredenn: Binary Stars is <strong>OUT NOW</strong> on{' '}
         <strong>Nintendo Switch</strong>, <strong>Steam</strong>,{' '}
-        <strong>Xbox One</strong> and <strong>PS4</strong>
+        <strong>Xbox One</strong>, <strong>PS4</strong> and <strong>iOS</strong>
       </h1>
       <p>
         Steredenn: Binary Stars is a hugely improved and massively expanded

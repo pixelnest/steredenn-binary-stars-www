@@ -13,8 +13,8 @@ export default [
   {name: 'PlayStation 4', progress: '1', text: 'Released', color: '#ED9301'},
   {
     name: 'iPhone/iPad',
-    progress: '0.95',
-    text: 'Waiting for release',
-    color: '#01A1ED'
+    progress: '1',
+    text: 'Released',
+    color: '#ED9301'
   }
 ]

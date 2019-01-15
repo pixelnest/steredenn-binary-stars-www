@@ -52,11 +52,13 @@ It's huge. It's a culmination of one year of work. And it makes Steredenn an alm
 
 ## FAQ #4: Well, that's cool, but I want Binary Stars on my current platform!!
 
-Don't worry, _we will update the game everywhere: Steam, Xbox One and PS4_. We have no release date for the moment, but **it's coming**.
+Great, **Steredenn: Binary Stars is available on all major platforms** we supported for Steredenn: Classic — Steam, Xbox One, PlayStation 4 and iOS! Plus, the Nintendo Switch, of course.
 
-We are deeply focused on the Nintendo Switch version and release right now. We will communicate later about the plan for the other platforms. Remember: we are a very small team and our bandwidth is limited. We have to pick our priorities carefully.
+~~Don't worry, _we will update the game everywhere: Steam, Xbox One and PS4_. We have no release date for the moment, but **it's coming**.~~
 
-We plan to bring Binary Stars to iOS after the other platforms too. Because of the strong constraints of the platform, we will need more time to adapt it in a way that fits the devices.
+~~We are deeply focused on the Nintendo Switch version and release right now. We will communicate later about the plan for the other platforms. Remember: we are a very small team and our bandwidth is limited. We have to pick our priorities carefully.~~
+
+~~We plan to bring Binary Stars to iOS after the other platforms too. Because of the strong constraints of the platform, we will need more time to adapt it in a way that fits the devices.~~
 
 ## FAQ #5: I already played 1000 hours of Steredenn. Is it for me?
 

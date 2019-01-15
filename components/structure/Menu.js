@@ -195,19 +195,9 @@ export const StoreMenu = ({}) => {
         </MenuItem>
         <MenuItem color="#B06FCB" direction="right">
           <a href="https://itunes.apple.com/app/steredenn/id916957220">
-            iPhone/iPad<span>Classic</span>
+            iPhone/iPad<span>Binary Stars</span>
           </a>
         </MenuItem>
-        <IgnoreIfPath
-          is="/progress"
-          render={props => (
-            <NormalLinkMenuItem>
-              <Link href="/progress">
-                <a>When is Binary Stars coming to my platform?</a>
-              </Link>
-            </NormalLinkMenuItem>
-          )}
-        />
       </ul>
     </Menu>
   )
