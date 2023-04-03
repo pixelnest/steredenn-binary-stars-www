@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import {Colors} from '../../styles/values'
+import {trackExternal} from '../analytics'
 
 // -------------------------------------------------------------
 // Components.
@@ -54,21 +55,47 @@ export default function Footer() {
       </p>
       <HList>
         <li>
-          <a href="http://pixelnest.io/">Website</a>
+          <a
+            href="http://pixelnest.io/"
+            onClick={() => trackExternal('Pixelnest', 'WEB')}
+          >
+            Website
+          </a>
         </li>
         <li>
-          <a href="https://twitter.com/pixelnest/">Twitter</a>
+          <a
+            href="https://twitter.com/pixelnest/"
+            onClick={() => trackExternal('Twitter', 'SOCIAL')}
+          >
+            Twitter
+          </a>
         </li>
         <li>
-          <a href="https://facebook.com/pixelneststudio/">Facebook</a>
+          <a
+            href="https://facebook.com/pixelneststudio/"
+            onClick={() => trackExternal('Facebook', 'SOCIAL')}
+          >
+            Facebook
+          </a>
         </li>
         <li>
-          <a href="https://instagram.com/pixelneststudio/">Instagram</a>
+          <a
+            href="https://instagram.com/pixelneststudio/"
+            onClick={() => trackExternal('Instagram', 'SOCIAL')}
+          >
+            Instagram
+          </a>
         </li>
       </HList>
       <p>
-        (c) 2019 <a href="http://pixelnest.io">Pixelnest Studio</a> - we craft
-        games and apps
+        (c) 2019{' '}
+        <a
+          href="http://pixelnest.io"
+          onClick={() => trackExternal('Pixelnest', 'WEB')}
+        >
+          Pixelnest Studio
+        </a>{' '}
+        - we craft games and apps
       </p>
     </Wrapper>
   )

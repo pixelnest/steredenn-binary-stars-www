@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 import YoutubeEmbed from './YoutubeEmbed'
 
+import {trackExternal} from './analytics'
+
 // -------------------------------------------------------------
 // Components.
 // -------------------------------------------------------------
@@ -35,7 +37,13 @@ export default () => {
       <p>
         Steredenn: Binary Stars is a hugely improved and massively expanded
         version of the{' '}
-        <a href="http://steredenn.pixelnest.io/classic/">original Steredenn</a>.
+        <a
+          href="http://steredenn.pixelnest.io/classic/"
+          onClick={() => trackExternal('Steredenn Classic', 'WEB')}
+        >
+          original Steredenn
+        </a>
+        .
       </p>
       <p>Prepare for the ultimate Steredenn experience!</p>
       <YoutubeEmbed code="iBG9yqcXB-4" />

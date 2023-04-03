@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import {Colors} from '../styles/values'
 
+import {trackExternal} from './analytics'
+
 // -------------------------------------------------------------
 // Components.
 // -------------------------------------------------------------
@@ -29,7 +31,7 @@ function Award({site, url, large, children}) {
   `
 
   return (
-    <Item href={url}>
+    <Item href={url} onClick={() => trackExternal(site, 'PRESS')}>
       {children}
       <Text>{site}</Text>
     </Item>

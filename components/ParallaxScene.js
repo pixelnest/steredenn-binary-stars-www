@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 import {Aligner} from './Toolbox'
+import analytics from './analytics'
 
 // -------------------------------------------------------------
 // Parallax layers.
@@ -91,6 +92,14 @@ const Logo = styled.img`
 `
 
 // -------------------------------------------------------------
+// Functions.
+// -------------------------------------------------------------
+
+function trackHome() {
+  analytics.track('Click Home')
+}
+
+// -------------------------------------------------------------
 // Main Component.
 // -------------------------------------------------------------
 
@@ -114,7 +123,7 @@ export default class ParallaxScene extends Component {
         <LogoLayer data-depth="0.01">
           <Aligner>
             <Link href="/">
-              <a>
+              <a onClick={trackHome}>
                 <Logo
                   src="/static/images/Logo.png"
                   title="Steredenn: Binary Stars"

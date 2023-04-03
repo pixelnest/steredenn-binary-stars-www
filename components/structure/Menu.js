@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {Colors, Breakpoints} from '../../styles/values'
 
 import IgnoreIfPath from '../IgnoreIfPath'
+import {trackExternal} from '../analytics'
 
 // -------------------------------------------------------------
 // Components.
@@ -147,21 +148,44 @@ export const SocialMenu = ({}) => {
           </Link>
         </MenuItem>
         <MenuItem>
-          <a href="http://pixelnest.io/presskit/steredenn-binary-stars/">
+          <a
+            href="http://pixelnest.io/presskit/steredenn-binary-stars/"
+            onClick={() => trackExternal('Presskit', 'WEB')}
+          >
             Presskit
           </a>
         </MenuItem>
         <MenuItem>
-          <a href="https://twitter.com/pixelnest/">Twitter</a>
+          <a
+            href="https://twitter.com/pixelnest/"
+            onClick={() => trackExternal('Twitter', 'SOCIAL')}
+          >
+            Twitter
+          </a>
         </MenuItem>
         <MenuItem>
-          <a href="https://facebook.com/pixelneststudio/">Facebook</a>
+          <a
+            href="https://facebook.com/pixelneststudio/"
+            onClick={() => trackExternal('Facebook', 'SOCIAL')}
+          >
+            Facebook
+          </a>
         </MenuItem>
         <MenuItem>
-          <a href="https://instagram.com/pixelneststudio/">Instagram</a>
+          <a
+            href="https://instagram.com/pixelneststudio/"
+            onClick={() => trackExternal('Instagram', 'SOCIAL')}
+          >
+            Instagram
+          </a>
         </MenuItem>
         <MenuItem>
-          <a href="mailto:steredenn@pixelnest.io">Contact</a>
+          <a
+            href="mailto:steredenn@pixelnest.io"
+            onClick={() => trackExternal('Contact', 'MAIL')}
+          >
+            Contact
+          </a>
         </MenuItem>
       </ul>
     </Menu>
@@ -174,27 +198,42 @@ export const StoreMenu = ({}) => {
       <MenuTitle>Stores</MenuTitle>
       <ul>
         <MenuItem color="#C60518" direction="right">
-          <a href="https://www.nintendo.com/games/detail/steredenn-binary-stars-switch">
+          <a
+            href="https://www.nintendo.com/games/detail/steredenn-binary-stars-switch"
+            onClick={() => trackExternal('Nintendo', 'STORE')}
+          >
             Nintendo Switch<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#F1BD28" direction="right">
-          <a href="http://store.steampowered.com/app/347160">
+          <a
+            href="http://store.steampowered.com/app/347160"
+            onClick={() => trackExternal('Steam', 'STORE')}
+          >
             Steam<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#49B4FF" direction="right">
-          <a href="https://store.playstation.com/?resolve=EP1302-CUSA04998_00-STEREDENN0000PXN">
+          <a
+            href="https://store.playstation.com/?resolve=EP1302-CUSA04998_00-STEREDENN0000PXN"
+            onClick={() => trackExternal('PS4', 'STORE')}
+          >
             PS4<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#98C73D" direction="right">
-          <a href="https://www.microsoft.com/fr-fr/p/steredenn/c4ts3rk0kdrj">
+          <a
+            href="https://www.microsoft.com/fr-fr/p/steredenn/c4ts3rk0kdrj"
+            onClick={() => trackExternal('Xbox One', 'STORE')}
+          >
             Xbox One<span>Binary Stars</span>
           </a>
         </MenuItem>
         <MenuItem color="#B06FCB" direction="right">
-          <a href="https://itunes.apple.com/app/steredenn/id916957220">
+          <a
+            href="https://itunes.apple.com/app/steredenn/id916957220"
+            onClick={() => trackExternal('App Store', 'STORE')}
+          >
             iPhone/iPad<span>Binary Stars</span>
           </a>
         </MenuItem>
