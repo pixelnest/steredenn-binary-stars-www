@@ -31,7 +31,7 @@ echo "Deploying to '$DESTINATION'…"
 
 echo 'Creating latest build…'
 
-yarn run export
+npm run export
 
 echo 'Syncing…'
 

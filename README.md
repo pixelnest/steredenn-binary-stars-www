@@ -3,14 +3,14 @@
 ## Develop
 
 ```
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 ## Static export
 
 ```
-yarn run export
+npm run export
 ```
 
 ## Deploy
@@ -26,7 +26,7 @@ With the name of your server.
 Then:
 
 ```
-yarn run deploy
+npm run deploy
 ```
 
 ## Create thumbs
