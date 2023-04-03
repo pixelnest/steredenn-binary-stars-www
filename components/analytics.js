@@ -8,7 +8,7 @@ const analytics = Analytics({
   app: 'steredenn-www',
   plugins: [
     amplitudePlugin({
-      apiKey: 'f4bdbe793ea506062c2b19689dc5dc50',
+      apiKey: 'd0312186d2f2a1ab437d022311a046d5',
       options: {
         trackingOptions: {
           ip_address: false
