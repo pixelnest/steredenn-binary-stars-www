@@ -3,7 +3,6 @@ import amplitudePlugin from '@analytics/amplitude'
 
 import Router from 'next/router'
 
-console.log(process.env.NODE_ENV)
 const apiKey =
   process.env.NODE_ENV === 'production'
     ? 'd0312186d2f2a1ab437d022311a046d5'
