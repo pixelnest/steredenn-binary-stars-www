@@ -5,7 +5,6 @@ import {ServerStyleSheet} from 'styled-components'
 import '../styles/globals/manifest'
 
 import Meta from '../components/structure/Meta'
-import GA from '../components/structure/GA'
 
 // -------------------------------------------------------------
 // Document.
@@ -14,8 +13,8 @@ import GA from '../components/structure/GA'
 export default class SteredennDocument extends Document {
   static getInitialProps({renderPage}) {
     const sheet = new ServerStyleSheet()
-    const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />)
+    const page = renderPage(
+      App => props => sheet.collectStyles(<App {...props} />)
     )
     const styleTags = sheet.getStyleElement()
     return {...page, styleTags}
@@ -31,7 +30,6 @@ export default class SteredennDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <GA />
         </body>
       </html>
     )
