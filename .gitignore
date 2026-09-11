@@ -19,12 +19,3 @@
 *.sass-cache
 nbproject
 Thumbs.db
-
-# Packages.
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-bower_components/
-.next/
-out/
